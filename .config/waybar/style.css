@@ -1,0 +1,127 @@
+/* === Base Waybar Styling ================================================= */
+
+  waybar * {
+    border: 4px;
+    border-radius: 4px;
+    min-height: 0;
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 14px;
+    }
+
+  #waybar {
+    background-color: rgba(30, 45, 61, 0.85);
+    border-radius: 2px;
+    color: #cdd6f4;
+    opacity: 0.90
+    }
+
+  window#waybar {
+    background: #282c34;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    color: #9cdef2;
+    border: 3px solid #61afef;
+    border-left: 3px solid #56b6c2;
+    border-right: 3px solid #56b6c2;
+    }
+
+/* === Workspaces ========================================================== */
+
+  #workspaces {
+    background-color: transparent;
+    margin: 0 5px;
+    }
+
+  #workspaces button {
+    color: #7ab8d4;
+    background-color: transparent;
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    }
+
+  #workspaces button.active {
+    color: #fab387;
+    background-color: rgba(122, 184, 212, 0.3);
+    border: 1px solid #7ab8d4;
+    border-radius: 4px;
+    }
+
+  #workspaces button:hover {
+    background-color: rgba(122, 184, 212, 0.2);
+    }
+
+
+  #custom-arch {
+    font-size: 20px;
+    padding: 0 15px;  /* Add more padding since it's bigger */
+    }
+
+  #custom-clock {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fab387;
+    }
+
+  #custom-date {
+    font-weight: bold;
+    font-size: 14px;
+    color: #61afef;
+    }
+
+  #custom-spotify {
+    padding: 0 12px;
+    margin: 0 4px;
+    background-color: rgba(30, 215, 96, 0.2);
+    border: 2px solid #1db954;
+    border-radius: 2px;
+    color: #1db954;
+    }
+
+  #pulseaudio {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fab387;
+    }
+
+  #network {
+    font-weight: bold;
+    font-size: 14px;
+    color: #61afef;
+    }
+
+  #cpu {
+    font-weight: bold;
+    font-size: 14px;
+    color: #61afef;
+    }
+
+  #memory {
+    font-weight: bold;
+    font-size: 14px;
+    color: #61afef;
+    }
+
+  #temperature {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fab387;
+    }
+
+  #custom-clock,
+  #custom-date,
+  #custom-vpn,
+  #tray,
+  #pulseaudio,
+  #network,
+  #cpu,
+  #memory,
+  #temperature,
+  #custom-power {
+    padding: 6px 12px;
+    margin: 6px 6px;
+    background-color: rgba(30, 45, 61, 0.7);
+    border: 2px solid #7ab8d4;
+    border-radius: 2px;
+    }
