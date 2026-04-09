@@ -337,6 +337,24 @@ require("gitsigns").setup({
 })
 
 
+-- Shared function for finding project files
+_G.find_project_files = function()
+  require("telescope.builtin").find_files({
+    search_dirs = {
+      "~/cprojects",
+      "~/rustprojects",
+      "~/adaprojects",
+      "~/asmprojects",
+      "~/exercism",
+      "~/dotfiles",
+      "~/Documents",
+      "~/.config",
+    },
+    hidden = true,
+  })
+end
+
+
 -- Bufferline
 require("bufferline").setup({
   options = {
@@ -447,7 +465,7 @@ vim.api.nvim_set_hl(0, "AlphaGhost", { fg = "#2a52be" })
 
 dashboard.section.buttons.val = {
    dashboard.button("n", "  New File", ":ene <BAR> startinsert<CR>"),
-   dashboard.button("f", "󰈞  Find File", ":Telescope find_files<CR>"),
+   dashboard.button("f", "󰈞  Find File", ":lua _G.find_project_files()<CR>"),
    dashboard.button("r", "  Recent File", ":Telescope oldfiles<CR>"),
    dashboard.button("e", "󰷈  Edit Config", ":e $MYVIMRC<CR>"),
    dashboard.button("u", "󰚰  Update Plugins", "<cmd>lua vim.pack.update()<CR>"),
@@ -505,6 +523,18 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live grep" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
+
+-- Search files from home directory
+vim.keymap.set("n", "<leader>fH", _G.find_project_files, { desc = "Find project files" })
+
+-- Search files from root (everywhere)
+vim.keymap.set("n", "<leader>f/", function()
+  require("telescope.builtin").find_files({
+    cwd = "/",
+    hidden = true,
+    no_ignore = true,
+  })
+end, { desc = "Find files (root)" })
 
 
 -- Mason
