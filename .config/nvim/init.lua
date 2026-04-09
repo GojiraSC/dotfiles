@@ -38,6 +38,15 @@ vim.keymap.set('n', '<Leader>du', function() require('dapui').toggle() end, { de
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
 
 
+-- Bufferline keymaps
+vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
+vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>bp", "<cmd>BufferLinePick<cr>", { desc = "Pick buffer" })
+vim.keymap.set("n", "<leader>bc", "<cmd>BufferLinePickClose<cr>", { desc = "Close picked buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
+vim.keymap.set("n", "<leader>bo", "<cmd>BufferLineCloseOthers<cr>", { desc = "Close other buffers" })
+
+
 -- Moving Files Keymap
 vim.keymap.set("n", "<leader>mv", function()
   local old = vim.fn.expand("%:p")
@@ -211,6 +220,9 @@ vim.pack.add({
   { src = "https://github.com/kdheepak/lazygit.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
 
+  -- Bufferline
+  { src = "https://github.com/akinsho/bufferline.nvim" },
+
   -- Completion
   "https://github.com/hrsh7th/nvim-cmp",
   "https://github.com/hrsh7th/cmp-nvim-lsp",
@@ -322,6 +334,27 @@ require("gitsigns").setup({
     -- Text object
     map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Select hunk")
   end,
+})
+
+
+-- Bufferline
+require("bufferline").setup({
+  options = {
+    mode = "buffers",
+    diagnostics = "nvim_lsp",
+    show_buffer_close_icons = true,
+    show_close_icon = false,
+    separator_style = "slant",
+    always_show_bufferline = true,
+    offsets = {
+      {
+        filetype = "NvimTree",
+        text = "File Explorer",
+        text_align = "center",
+        separator = true,
+      },
+    },
+  },
 })
 
 
