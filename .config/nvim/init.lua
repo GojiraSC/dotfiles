@@ -174,6 +174,10 @@ end, { desc = "STM32 flash" })
 
 -- vim.pack Stuff
 vim.pack.add({
+
+  -- Startup
+  { src = "https://github.com/dstein64/vim-startuptime" },
+
   -- Colorscheme
   "https://github.com/f4z3r/gruvbox-material.nvim",
 
@@ -591,14 +595,6 @@ vim.lsp.config.bashls = {
   capabilities = capabilities,
 }
 
---ARM ASM
-vim.lsp.config.asm_lsp = {
-  cmd = { "asm-lsp" },
-  filetypes = { "asm" },
-  root_markers = { ".git" },
-  capabilities = capabilities,
-}
-
 -- Ada
 vim.lsp.config.als = {
   cmd = { "ada_language_server" },
@@ -623,7 +619,6 @@ vim.lsp.enable("pyright")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("bashls")
-vim.lsp.enable("asm_lsp")
 vim.lsp.enable("als")
 vim.lsp.enable("arduino_language_server")
 
