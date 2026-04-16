@@ -276,6 +276,11 @@ require("nvim-web-devicons").set_icon({
       color = "#6A7EC2",
       name = "Asm",
    },
+   sh = {
+      icon = "",
+      color = "#848282",
+      name = "Bash",
+   },
 })
 
 vim.defer_fn(function()
@@ -284,6 +289,10 @@ end, 100)
 
 vim.defer_fn(function()
    vim.api.nvim_set_hl(0, "DevIconAsm", { fg = "#6A7EC2" })
+end, 100)
+
+vim.defer_fn(function()
+   vim.api.nvim_set_hl(0, "DevIconBash", { fg = "#848282" })
 end, 100)
 
 
@@ -468,14 +477,14 @@ vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#fabd2f" })
 vim.api.nvim_set_hl(0, "AlphaGhost", { fg = "#2a52be" })
 
 dashboard.section.buttons.val = {
-   dashboard.button("n", "  New File", ":ene <BAR> startinsert<CR>"),
-   dashboard.button("f", "󰈞  Find File", ":lua _G.find_project_files()<CR>"),
-   dashboard.button("r", "  Recent File", ":Telescope oldfiles<CR>"),
-   dashboard.button("e", "󰷈  Edit Config", ":e $MYVIMRC<CR>"),
-   dashboard.button("u", "󰚰  Update Plugins", "<cmd>lua vim.pack.update()<CR>"),
-   dashboard.button("m", "  Jump to Bookmarks", ":Telescope marks<CR>"),
-   dashboard.button("l", "  Open Last Session", ":SessionManager load_last_session<CR>"),
-   dashboard.button("q", "󰩈  Quit NVIM", ":qa<CR>"),
+   dashboard.button("n", " -> New File", ":ene <BAR> startinsert<CR>"),
+   dashboard.button("f", "󰈞 -> Find File", ":lua _G.find_project_files()<CR>"),
+   dashboard.button("r", " -> Recent File", ":Telescope oldfiles<CR>"),
+   dashboard.button("e", "󰷈 -> Edit Config", ":e $MYVIMRC<CR>"),
+   dashboard.button("u", "󰚰 -> Update Plugins", "<cmd>lua vim.pack.update()<CR>"),
+   dashboard.button("m", " -> Jump to Bookmarks", ":Telescope marks<CR>"),
+   dashboard.button("l", " -> Open Last Session", ":SessionManager load_last_session<CR>"),
+   dashboard.button("q", "󰩈 -> Quit NVIM", ":qa<CR>"),
 }
 
 dashboard.section.footer.val = function()
