@@ -6,15 +6,15 @@ format = """
 symbol = " "
 
 [username]
-style_user = "cyan"
+style_user = "#dccdff"
 style_root = "red"
 format = "[\\(](green)[](#1793d1)[\\)\\(](green)[$user]($style)"
 show_always = true
 
 
 [hostname]
-style = "cyan"
-format = "[@](green)[$hostname]($style)[\\)--](green)"
+style = "#3d85c6"
+format = "[㉿](#999999)[$hostname]($style)[\\)--](green)"
 ssh_only = false
 
 [directory]
@@ -25,7 +25,7 @@ truncate_to_repo = false
 
 [git_branch]
 style = "white"
-format = "[-](green)[\\[](green)[](#ce7e00)[$branch]($style)[\\]](green)"
+format = "[-](green)[\\[](green)[](#f44336)[$branch]($style)[\\]](green)"
 
 [git_status]
 style = "red"
