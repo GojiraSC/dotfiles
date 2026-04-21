@@ -1,0 +1,110 @@
+format = """
+[┌──](green)$username$hostname$directory$python$lua$git_branch$git_status$rust$c$custom$cmd_duration$status
+[└─](green)\\$ """
+
+[fill]
+symbol = " "
+
+[username]
+style_user = "cyan"
+style_root = "red"
+format = "[\\(](green)[](#1793d1)[\\)\\(](green)[$user]($style)"
+show_always = true
+
+
+[hostname]
+style = "cyan"
+format = "[@](green)[$hostname]($style)[\\)--](green)"
+ssh_only = false
+
+[directory]
+style = "white"
+format = "[\\[](green)[$path]($style)[\\]](green)"
+truncation_length = 100
+truncate_to_repo = false
+
+[git_branch]
+style = "white"
+format = "[-](green)[\\[](green)[](#ce7e00)[$branch]($style)[\\]](green)"
+
+[git_status]
+style = "red"
+format = "[$all_status$ahead_behind]($style)"
+untracked = ""
+modified = "!"
+staged = "+"
+deleted = "-"
+
+[python]
+style = "yellow"
+format = "[-\\[](green)[](#ffd966)[ $virtualenv$version]($style)[\\]](green)"
+detect_extensions = ["py"]
+detect_files = ["requirements.txt", "pyproject.toml", ".python-version"]
+
+[rust]
+style = "#CE422B"
+format = "[-\\[](green)[](#CE422B)[ $version]($style)[\\]](green)"
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+
+[c]
+style = "#00599C"
+format = "[-\\[](green)[](#67aded)($style)[\\]](green)"
+detect_extensions = ["c", "h"]
+detect_files = ["Makefile", "CMakeLists.txt"]
+
+[custom.cpp]
+command = "g++ --version | head -1 | awk '{print $NF}'"
+when = "test -f *.cpp || test -f *.hpp || test -f *.cc"
+style = "#519aba"
+format = "[-\\[](green)[]($style)[\\]](green)"
+detect_extensions = ["cpp", "hpp", "cc", "cxx"]
+
+[custom.asm]
+command = "echo 'ASM'"
+when = "test -f *.asm || test -f *.s || test -f *.S"
+style = "#6A7EC2"
+format = "[-\\[](green)[]()[]($style)[\\]](green)"
+detect_extensions = ["asm", "s", "S"]
+
+[custom.bash]
+command = "bash --version | head -1 | awk '{print $4}'"
+when = "test -f *.sh"
+style = "#848282"
+format = "[-\\[](green)[]($style)[\\]](green)"
+detect_extensions = ["sh", "bash"]
+
+[custom.ada]
+command = "gnat --version | head -1 | awk '{print $NF}'"
+when = "test -f *.adb || test -f *.ads"
+style = "#38761d"
+format = "[-\\[](green)[]($style)[\\]](green)"
+detect_extensions = ["adb", "ads"]
+
+[custom.arduino]
+command = "echo 'Arduino'"
+when = "test -f *.ino"
+style = "#00979D"
+format = "[-\\[](green)[]($style)[\\]](green)"
+detect_extensions = ["ino"]
+
+[lua]
+style = "#000080"
+format = "[-\\[](green)[](#000080)[ $version]($style)[\\]](green)"
+detect_extensions = ["lua"]
+detect_files = [".lua-version", ".luarc.json"]
+
+[character]
+disabled = true
+
+[cmd_duration]
+disabled = false
+min_time = 2000
+format = "[-\\[](green)[󰔛 $duration](yellow)[\\]](green)"
+
+[status]
+disabled = false
+format = "[\\[](green)[✘ $status](red)[\\]](green)"
+
+[line_break]
+disabled = true
