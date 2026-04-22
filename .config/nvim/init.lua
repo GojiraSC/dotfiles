@@ -3,7 +3,7 @@ vim.g.localleader = "\\"
 
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:block-blinkwait300-blinkon200-blinkoff150,r-cr:hor20,o:hor50"
 vim.opt.number = true
---vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 vim.opt.tabstop = 3
 vim.opt.shiftwidth = 3
 vim.opt.expandtab = true
@@ -214,7 +214,7 @@ vim.pack.add({
   "https://github.com/williamboman/mason-lspconfig.nvim",
   "https://github.com/jay-babu/mason-nvim-dap.nvim",
 
-  --DAP
+  -- DAP
   "https://github.com/mfussenegger/nvim-dap",
 
   -- LSP
@@ -227,6 +227,12 @@ vim.pack.add({
   -- Bufferline
   { src = "https://github.com/akinsho/bufferline.nvim" },
 
+  -- Status Column
+  { src = "https://github.com/luukvbaal/statuscol.nvim" },
+
+  -- Line-Justice
+  "https://github.com/zaakiy/line-justice.nvim",
+
   -- Completion
   "https://github.com/hrsh7th/nvim-cmp",
   "https://github.com/hrsh7th/cmp-nvim-lsp",
@@ -235,6 +241,36 @@ vim.pack.add({
   "https://github.com/L3MON4D3/LuaSnip",
   "https://github.com/saadparwaiz1/cmp_luasnip",
   "https://github.com/rafamadriz/friendly-snippets",
+})
+
+
+-- Line Justice
+local lj = require("line-justice")
+lj.setup({
+  line_numbers = {
+    theme = nil,
+    overrides = {
+      CursorLine    = { fg = "#ffd966", bold = true },
+      AbsoluteAbove = { fg = "#a89984" },
+      AbsoluteBelow = { fg = "#a89984" },
+      RelativeAbove = { fg = "#a2c4c9" },
+      RelativeBelow = { fg = "#d9d2e9" },
+      WrappedLine   = { fg = "#928374", italic = true },
+    },
+  },
+})
+
+local builtin = require("statuscol.builtin")
+require("statuscol").setup({
+  relculright = true,
+  ft_ignore = { "NvimTree" },
+  segments = {
+    { text = { builtin.foldfunc }, click = "v:lua.ScFa" },
+    { sign = { namespace = { "gitsigns" }, maxwidth = 1, colwidth = 1, auto = true }, click = "v:lua.ScSa" },
+    { sign = { namespace = { "diagnostic/signs" }, maxwidth = 2, auto = true }, click = "v:lua.ScSa" },
+    { sign = { name = { ".*" }, maxwidth = 2, colwidth = 1, auto = true, wrap = true }, click = "v:lua.ScSa" },
+    { text = { lj.segment }, click = "v:lua.ScLa" },
+  },
 })
 
 -- Colorscheme
@@ -280,6 +316,11 @@ require("nvim-web-devicons").set_icon({
       icon = "",
       color = "#848282",
       name = "Bash",
+   },
+   rs = {
+      icon = "󱘗",
+      color = "#CE422B",
+      name = "Rust",
    },
 })
 
@@ -358,6 +399,7 @@ _G.find_project_files = function()
       "~/rustprojects",
       "~/adaprojects",
       "~/asmprojects",
+      "~/cpp-projects",
       "~/exercism",
       "~/dotfiles",
       "~/Documents",
