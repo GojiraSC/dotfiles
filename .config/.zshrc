@@ -15,12 +15,8 @@ export VISUAL=nvim
 
 alias gcc='gcc -std=c23'
 alias clang='clang -std=c23'
-
 alias g++='g++ -std=c++20'
 alias clang++='clang++ -std=c++20'
-
-alias gcc11='gcc -std=c11'
-alias g++17='g++ -std=c++17'
 
 
 if test -n "$KITTY_INSTALLATION_DIR"; then
