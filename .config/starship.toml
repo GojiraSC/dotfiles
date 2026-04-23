@@ -1,20 +1,19 @@
 format = """
-[┌──](green)$username$hostname$directory$python$lua$git_branch$git_status$rust$c$custom$cmd_duration$status
+[┌──](green)$username$hostname$time$directory$python$lua$rust$c$custom$git_branch$git_status$cmd_duration$status
 [└─](green)\\$ """
 
 [fill]
 symbol = " "
 
 [username]
-style_user = "#dccdff"
+style_user = "#d0e0e3"
 style_root = "red"
 format = "[\\(](green)[](#1793d1)[\\)\\(](green)[$user]($style)"
 show_always = true
 
-
 [hostname]
 style = "#3d85c6"
-format = "[㉿](#999999)[$hostname]($style)[\\)--](green)"
+format = "[㉿](#999999)[$hostname]($style)[\\)](green)"
 ssh_only = false
 
 [directory]
@@ -93,6 +92,19 @@ style = "#000080"
 format = "[-\\[](green)[](#000080)[ $version]($style)[\\]](green)"
 detect_extensions = ["lua"]
 detect_files = [".lua-version", ".luarc.json"]
+
+[custom.org]
+command = "echo 'Org'"
+when = "test -f *.org"
+style = "#77aa99"
+format = "[-\\[](green)[](#77aa99)[]($style)[\\]](green)"
+detect_extensions = ["org"]
+
+[time]
+disabled = false
+style = "cyan"
+format = "[\\(](green)[ $time]($style)[\\)--](green)"
+time_format = "%I:%M %p"
 
 [character]
 disabled = true
