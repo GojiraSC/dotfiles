@@ -1,28 +1,18 @@
 /* === Base Waybar Styling ================================================= */
 
-  waybar * {
-    border: 4px;
-    border-radius: 4px;
-    min-height: 0;
-    font-family: "JetbrainsMono Nerd Font";
-    font-size: 14px;
-    }
+  * {
+  font-family: "DepartureMono Nerd Font";
+  font-size: 14px;
+  }
 
   #waybar {
-    background-color: rgba(30, 45, 61, 0.85);
-    border-radius: 2px;
-    color: #cdd6f4;
-    opacity: 0.90
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #ebdbb2;
+    border-radius: 0;
     }
 
   window#waybar {
-    background: #282c34;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    color: #9cdef2;
-    border: 3px solid #61afef;
-    border-left: 3px solid #56b6c2;
-    border-right: 3px solid #56b6c2;
+    background-color: transparent;
     }
 
 /* === Workspaces ========================================================== */
@@ -33,80 +23,81 @@
     }
 
   #workspaces button {
-    color: #7ab8d4;
+    color: #928374;
     background-color: transparent;
-    padding: 0 8px;
+    padding: 8px;
     margin: 0 2px;
-    border-radius: 4px;
+    border-radius: 2px;
     font-weight: bold;
+    font-size: 14px;
     }
 
   #workspaces button.active {
-    color: #fab387;
-    background-color: rgba(122, 184, 212, 0.3);
-    border: 1px solid #7ab8d4;
+    color: #fabd2f;
+    background-color: rgba(215, 153, 33, 0.3);
+    border: 1px solid #d79921;
     border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px;
     }
 
   #workspaces button:hover {
-    background-color: rgba(122, 184, 212, 0.2);
+    background-color: rgba(215, 153, 33, 0.2);
     }
 
 
   #custom-arch {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 15px;  /* Add more padding since it's bigger */
+    color: #1a8de4;
     }
 
   #custom-clock {
     font-weight: bold;
     font-size: 14px;
-    color: #fab387;
+    color: #fabd2f;
     }
 
   #custom-date {
+    color: #8ec07c;
     font-weight: bold;
     font-size: 14px;
-    color: #61afef;
     }
 
   #custom-spotify {
-    padding: 0 12px;
-    margin: 0 4px;
-    background-color: rgba(30, 215, 96, 0.2);
-    border: 2px solid #1db954;
-    border-radius: 2px;
-    color: #1db954;
+    background-color: rgba(152, 151, 26, 0.2);
+    border: 2px solid #98971a;
+    color: #b8bb26;
     }
 
   #pulseaudio {
+    color: #fe8019;
     font-weight: bold;
     font-size: 14px;
-    color: #fab387;
     }
 
   #network {
-    font-weight: bold;
+    color: #83a598;
     font-size: 14px;
-    color: #61afef;
     }
 
   #cpu {
+    color: #fb4934;
     font-weight: bold;
     font-size: 14px;
-    color: #61afef;
     }
 
   #memory {
+    color: #d3869b;
     font-weight: bold;
     font-size: 14px;
-    color: #61afef;
     }
 
   #temperature {
+    color: #fabd2f;
     font-weight: bold;
     font-size: 14px;
-    color: #fab387;
     }
 
   #custom-clock,
