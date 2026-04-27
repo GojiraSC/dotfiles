@@ -22,6 +22,7 @@ vim.keymap.set("n", "<leader>dh", ":DiffviewFileHistory<CR>", { desc = "Diffview
 vim.keymap.set('n', '<leader>dc', ':DiffviewClose<CR>', { desc = 'Close Diffview' })
 vim.keymap.set("n", "<leader>qq", ":q!<CR>", { desc = "Force quit" })
 vim.keymap.set("n", "<leader>x", ":!bash %<CR>", { desc = "Run current file as script" })
+vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode" })
 
 
 -- DAP Keymaps
@@ -32,6 +33,11 @@ vim.keymap.set('n', '<F8>', function() require('dap').step_out() end, { desc = '
 vim.keymap.set("n", "<F9>", function() require('dap').toggle_breakpoint() end, { desc = "DAP: Toggle Breakpoint" })
 vim.keymap.set('n', '<Leader>db', function() require('dap').toggle_breakpoint() end, { desc = 'DAP: Toggle Breakpoint' })
 vim.keymap.set('n', '<Leader>du', function() require('dapui').toggle() end, { desc = 'DAP: Toggle UI' })
+
+
+-- Dadbod UI
+vim.g.db_ui_use_nerd_fonts = 1
+vim.keymap.set("n", "<leader>db", "<cmd>DBUIToggle<cr>", { desc = "Toggle Dadbod UI" })
 
 
 -- Lazygit Keymap
@@ -69,7 +75,7 @@ vim.keymap.set("n", "<leader>t", function()
 end, { desc = "Open terminal" })
 
 
--- gcc, g++, rustc, lua, python, bash, arduino, and ada compiling
+-- gcc, g++, rustc, lua, python, bash, arduino, sql, and ada compiling
 vim.keymap.set("n", "<leader>r", function()
    vim.cmd("w")  -- Save file first
    local ft = vim.bo.filetype
@@ -97,6 +103,8 @@ vim.keymap.set("n", "<leader>r", function()
     cmd = string.format("gnatmake %s -o %s && ./%s; exec bash", filename, basename, basename)
  elseif ft == "arduino" then
     cmd = string.format("arduino-cli compile %s && arduino-cli upload %s; exec bash", vim.fn.expand("%:h"), vim.fn.expand("%:h"))
+ elseif ft == "sql" then
+    cmd = string.format("psql -f %s; exec bash", filename)
  else
     vim.notify("Not a supported filetype for running!", vim.log.levels.WARN)
     return
@@ -182,7 +190,6 @@ vim.pack.add({
   "https://github.com/f4z3r/gruvbox-material.nvim",
 
   -- Fuzzy finder
-  "https://github.com/ibhagwan/fzf-lua",
   "https://github.com/nvim-tree/nvim-web-devicons",
 
   -- Treesitter
@@ -233,6 +240,11 @@ vim.pack.add({
   -- Line-Justice
   "https://github.com/zaakiy/line-justice.nvim",
 
+  -- SQL Database Stuff
+  { src = "https://github.com/tpope/vim-dadbod" },
+  { src = "https://github.com/kristijanhusak/vim-dadbod-ui" },
+  { src = "https://github.com/kristijanhusak/vim-dadbod-completion" },
+
   -- Completion
   "https://github.com/hrsh7th/nvim-cmp",
   "https://github.com/hrsh7th/cmp-nvim-lsp",
@@ -253,8 +265,8 @@ lj.setup({
       CursorLine    = { fg = "#ffd966", bold = true },
       AbsoluteAbove = { fg = "#a89984" },
       AbsoluteBelow = { fg = "#a89984" },
-      RelativeAbove = { fg = "#a2c4c9" },
-      RelativeBelow = { fg = "#d9d2e9" },
+      RelativeAbove = { fg = "#cfe2f3" },
+      RelativeBelow = { fg = "#fce5cd" },
       WrappedLine   = { fg = "#928374", italic = true },
     },
   },
@@ -263,7 +275,8 @@ lj.setup({
 local builtin = require("statuscol.builtin")
 require("statuscol").setup({
   relculright = true,
-  ft_ignore = { "NvimTree" },
+  ft_ignore = { "NvimTree", "tutor" },
+  bt_ignore = { "terminal" },
   segments = {
     { text = { builtin.foldfunc }, click = "v:lua.ScFa" },
     { sign = { namespace = { "gitsigns" }, maxwidth = 1, colwidth = 1, auto = true }, click = "v:lua.ScSa" },
@@ -277,8 +290,6 @@ require("statuscol").setup({
 require("gruvbox-material").setup({})
 vim.cmd("colorscheme gruvbox-material")
 
--- Fzf-lua
-require("fzf-lua").setup({})
 
 -- nvim-web-devicons (c++, lua, ada, asm)
 require("nvim-web-devicons").set_icon({
@@ -321,6 +332,11 @@ require("nvim-web-devicons").set_icon({
       icon = "󱘗",
       color = "#CE422B",
       name = "Rust",
+   },
+   css = {
+      icon = "",
+      color = "#2986cc",
+      name = "CSS",
    },
 })
 
@@ -400,10 +416,12 @@ _G.find_project_files = function()
       "~/adaprojects",
       "~/asmprojects",
       "~/cpp-projects",
+      "~/luaprojects",
       "~/exercism",
       "~/dotfiles",
       "~/Documents",
       "~/.config",
+      "~/org",
     },
     hidden = true,
   })
@@ -665,6 +683,14 @@ vim.lsp.config.arduino_language_server = {
    capabilities = capabilities,
 }
 
+-- SQL
+vim.lsp.config.sqls = {
+  cmd = { "sqls" },
+  filetypes = { "sql" },
+  root_markers = { ".git" },
+  capabilities = capabilities,
+}
+
 vim.lsp.enable("clangd")
 vim.lsp.enable("pyright")
 vim.lsp.enable("rust_analyzer")
@@ -672,6 +698,7 @@ vim.lsp.enable("lua_ls")
 vim.lsp.enable("bashls")
 vim.lsp.enable("als")
 vim.lsp.enable("arduino_language_server")
+vim.lsp.enable("sqls")
 
 
 -- DAP
