@@ -1,0 +1,20 @@
+[flavor]
+use = "gruvbox-dark"
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "yellow" },
+  { mime = "video/*", fg = "magenta" },
+  { mime = "audio/*", fg = "magenta" },
+  { mime = "application/zip", fg = "red" },
+  { name = "*.rs", fg = "red" },
+  { name = "*.lua", fg = "blue" },
+  { name = "*.c", fg = "cyan" },
+]
+
+[status]
+separator_open = ""
+separator_close = ""
+
+[manager]
+border_style = { fg = "yellow" }  # Gruvbox yellow borders

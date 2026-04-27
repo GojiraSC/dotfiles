@@ -1,0 +1,90 @@
+[[mgr.prepend_keymap]]
+on = ["<F2>"]
+run = "rename"
+desc = "Rename file"
+
+
+[[mgr.prepend_keymap]]
+on = ["<Delete>"]
+run = "remove"
+desc = "Trash file"
+
+
+[[mgr.prepend_keymap]]
+on = ["<C-l>"]
+run = "cd --interactive"
+desc = "Open location bar"
+
+
+[[mgr.prepend_keymap]]
+on = ["<C-t>"]
+run = "shell 'kitty &' --block"
+desc = "Open terminal here"
+
+
+[[mgr.prepend_keymap]]
+on = ["<C-x>"]
+run = "shell 'aunpack \"$@\"' --confirm"
+desc = "Extract archive"
+
+
+[[mgr.prepend_keymap]]
+on = ["<F>"]
+run = "plugin jump-to-char"
+desc = "Jump to char"
+
+
+[[mgr.prepend_keymap]]
+on = ["l"]
+run = "plugin smart-enter"
+desc = "Smart enter"
+
+
+[[mgr.prepend_keymap]]
+on = ["1"]
+run = "plugin relative-motions --args=1"
+
+
+[[mgr.prepend_keymap]]
+on = ["2"]
+run = "plugin relative-motions --args=2"
+
+
+[[mgr.prepend_keymap]]
+on = ["3"]
+run = "plugin relative-motions --args=3"
+
+
+[[mgr.prepend_keymap]]
+on = ["4"]
+run = "plugin relative-motions --args=4"
+
+
+[[mgr.prepend_keymap]]
+on = ["5"]
+run = "plugin relative-motions --args=5"
+
+
+[[mgr.prepend_keymap]]
+on = ["6"]
+run = "plugin relative-motions --args=6"
+
+
+[[mgr.prepend_keymap]]
+on = ["7"]
+run = "plugin relative-motions --args=7"
+
+
+[[mgr.prepend_keymap]]
+on = ["8"]
+run = "plugin relative-motions --args=8"
+
+
+[[mgr.prepend_keymap]]
+on = ["9"]
+run = "plugin relative-motions --args=9"
+
+
+[[mgr.prepend_keymap]]
+on = "M"
+run = "plugin mount"
