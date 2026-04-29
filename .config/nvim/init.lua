@@ -35,10 +35,6 @@ vim.keymap.set('n', '<Leader>db', function() require('dap').toggle_breakpoint() 
 vim.keymap.set('n', '<Leader>du', function() require('dapui').toggle() end, { desc = 'DAP: Toggle UI' })
 
 
--- Dadbod UI
-vim.g.db_ui_use_nerd_fonts = 1
-vim.keymap.set("n", "<leader>db", "<cmd>DBUIToggle<cr>", { desc = "Toggle Dadbod UI" })
-
 
 -- Lazygit Keymap
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
@@ -75,7 +71,7 @@ vim.keymap.set("n", "<leader>t", function()
 end, { desc = "Open terminal" })
 
 
--- gcc, g++, rustc, lua, python, bash, arduino, sql, and ada compiling
+-- gcc, g++, rustc, lua, python, bash, arduino, and ada compiling
 vim.keymap.set("n", "<leader>r", function()
    vim.cmd("w")  -- Save file first
    local ft = vim.bo.filetype
@@ -103,8 +99,6 @@ vim.keymap.set("n", "<leader>r", function()
     cmd = string.format("gnatmake %s -o %s && ./%s; exec bash", filename, basename, basename)
  elseif ft == "arduino" then
     cmd = string.format("arduino-cli compile %s && arduino-cli upload %s; exec bash", vim.fn.expand("%:h"), vim.fn.expand("%:h"))
- elseif ft == "sql" then
-    cmd = string.format("psql -f %s; exec bash", filename)
  else
     vim.notify("Not a supported filetype for running!", vim.log.levels.WARN)
     return
@@ -242,11 +236,6 @@ vim.pack.add({
 
   -- Line-Justice
   "https://github.com/zaakiy/line-justice.nvim",
-
-  -- SQL Database Stuff
-  { src = "https://github.com/tpope/vim-dadbod" },
-  { src = "https://github.com/kristijanhusak/vim-dadbod-ui" },
-  { src = "https://github.com/kristijanhusak/vim-dadbod-completion" },
 
   -- Completion
   "https://github.com/hrsh7th/nvim-cmp",
@@ -708,13 +697,6 @@ vim.lsp.config.arduino_language_server = {
    capabilities = capabilities,
 }
 
--- SQL
-vim.lsp.config.sqls = {
-  cmd = { "sqls" },
-  filetypes = { "sql" },
-  root_markers = { ".git" },
-  capabilities = capabilities,
-}
 
 vim.lsp.enable("clangd")
 vim.lsp.enable("pyright")
@@ -723,7 +705,6 @@ vim.lsp.enable("lua_ls")
 vim.lsp.enable("bashls")
 vim.lsp.enable("als")
 vim.lsp.enable("arduino_language_server")
-vim.lsp.enable("sqls")
 
 
 -- DAP
