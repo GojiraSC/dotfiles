@@ -189,14 +189,17 @@ vim.pack.add({
   -- Colorscheme
   "https://github.com/f4z3r/gruvbox-material.nvim",
 
-  -- Fuzzy finder
-  "https://github.com/nvim-tree/nvim-web-devicons",
+  -- Colorizer
+  { src = "https://github.com/NvChad/nvim-colorizer.lua" },
 
-  -- Treesitter
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
+  -- Icons 
+  "https://github.com/nvim-tree/nvim-web-devicons",
 
   -- Statusline
   "https://github.com/nvim-lualine/lualine.nvim",
+
+  -- Treesitter
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 
   -- Session manager
   "https://github.com/nvim-lua/plenary.nvim",
@@ -290,6 +293,26 @@ require("statuscol").setup({
 require("gruvbox-material").setup({})
 vim.cmd("colorscheme gruvbox-material")
 
+-- Colorizer
+require("colorizer").setup({
+  filetypes = { "*" },
+  user_default_options = {
+    css = true,
+    RGB = true,
+    RRGGBB = true,
+    names = false,
+    rgb_fn = true,
+    hsl_fn = true,
+  },
+})
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.schedule(function()
+      vim.cmd("ColorizerAttachToBuffer")
+    end)
+  end,
+})
+
 
 -- nvim-web-devicons (c++, lua, ada, asm)
 require("nvim-web-devicons").set_icon({
@@ -351,6 +374,7 @@ end, 100)
 vim.defer_fn(function()
    vim.api.nvim_set_hl(0, "DevIconBash", { fg = "#848282" })
 end, 100)
+
 
 
 -- Gitsigns
@@ -422,6 +446,7 @@ _G.find_project_files = function()
       "~/Documents",
       "~/.config",
       "~/org",
+      "~/bin",
     },
     hidden = true,
   })
@@ -576,7 +601,7 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file tr
 
 -- Treesitter (native)
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "c", "cpp", "lua", "rust", "python", "bash", "markdown", "vim","asm", "ada", "arduino" },
+  pattern = { "c", "cpp", "lua", "rust", "python", "bash", "markdown", "vim", "asm", "ada", "arduino", "json", "yaml", "toml", "html", "css", "cmake" },
   callback = function()
     vim.treesitter.start()
   end,
