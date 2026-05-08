@@ -25,6 +25,7 @@ set background=dark
 
 " Keymaps
 let mapleader = " "
+inoremap jk <Esc>
 
 " Clear search highlight
 nnoremap <leader>h :nohlsearch<CR>
@@ -38,3 +39,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
+
+" Vim Tree
+nnoremap <leader>e :Explore<CR>
