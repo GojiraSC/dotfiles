@@ -165,12 +165,31 @@ vim.keymap.set("n", "<leader>al", function()
 end, { desc = "Arduino install library" })
 
 
--- STM32 Flash Keymaps
+-- STM32 Build
+vim.keymap.set("n", "<leader>sb", function()
+  vim.cmd("w")
+  vim.cmd("belowright split | resize 15 | terminal make; exec bash")
+  vim.cmd("startinsert")
+end, { desc = "STM32 build" })
+
+-- STM32 Flash
 vim.keymap.set("n", "<leader>sf", function()
   vim.cmd("w")
   vim.cmd("belowright split | resize 15 | terminal make flash; exec bash")
   vim.cmd("startinsert")
 end, { desc = "STM32 flash" })
+
+-- STM32 Clean
+vim.keymap.set("n", "<leader>sc", function()
+  vim.cmd("belowright split | resize 15 | terminal make clean; exec bash")
+  vim.cmd("startinsert")
+end, { desc = "STM32 clean" })
+
+-- STM32 Debug (OpenOCD)
+vim.keymap.set("n", "<leader>sd", function()
+  vim.cmd("belowright split | resize 15 | terminal openocd -f interface/stlink.cfg -f target/stm32f4x.cfg; exec bash")
+  vim.cmd("startinsert")
+end, { desc = "STM32 OpenOCD debug server" })
 
 
 
