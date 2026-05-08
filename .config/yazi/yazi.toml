@@ -1,12 +1,54 @@
 [mgr]
 show_hidden = true
+sort_by = "mtime"
+sort_reverse = true
+sort_dir_first = true
+
+
+[opener]
+libreoffice = [
+  { run = 'sh /usr/lib/libreoffice/program/soffice "$@"', orphan = true, desc = "LibreOffice" },
+]
+nvim = [
+  { run = 'kitty /home/gojira_96/.local/share/bob/nvim-bin/nvim "$@"', orphan = true, desc = "Neovim" },
+]
+qview = [
+  { run = 'qview "$@"', orphan = true, desc = "qview" },
+]
+librewolf = [
+  { run = 'librewolf "$@"', orphan = true, desc = "Librewolf" },
+]
+qutebrowser = [
+  { run = '/usr/bin/qutebrowser "$@"', orphan = true, desc = "qutebrowser" },
+]
+
+[open]
+rules = [
+  { url = "*.docx", use = ["libreoffice"] },
+  { url = "*.xlsx", use = ["libreoffice"] },
+  { url = "*.pptx", use = ["libreoffice"] },
+  { mime = "text/*", use = ["nvim"] },
+  { name = "*.conf", use = ["nvim"] },
+  { name = "*.toml", use = ["nvim"] },
+  { mime = "image/*", use = ["qview", "librewolf", "qutebrowser"] },
+]
 
 [plugin]
 prepend_fetchers = [
   { id = "git", name = "*", run = "git" },
   { id = "git", name = "*/", run = "git" },
+  { id = "mime-ext", name = "*", run = "mime-ext.local", prio = "high" },
+]
+
+prepend_preloaders = [
+  { name = "*.docx", run = "office" },
+  { name = "*.xlsx", run = "office" },
+  { name = "*.pptx", run = "office" },
 ]
 
 prepend_previewers = [
   { mime = "application/octet-stream", run = "hexyl" },
+  { name = "*.docx", run = "office" },
+  { name = "*.xlsx", run = "office" },
+  { name = "*.pptx", run = "office" },
 ]
