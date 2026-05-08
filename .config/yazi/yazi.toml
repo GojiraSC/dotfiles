@@ -12,6 +12,9 @@ libreoffice = [
 nvim = [
   { run = 'kitty /home/gojira_96/.local/share/bob/nvim-bin/nvim "$@"', orphan = true, desc = "Neovim" },
 ]
+vim = [
+  { run = 'kitty /usr/bin/vim "$@"', orphan = true, desc = "Vim" },
+]
 qview = [
   { run = 'qview "$@"', orphan = true, desc = "qview" },
 ]
@@ -27,9 +30,9 @@ rules = [
   { url = "*.docx", use = ["libreoffice"] },
   { url = "*.xlsx", use = ["libreoffice"] },
   { url = "*.pptx", use = ["libreoffice"] },
-  { mime = "text/*", use = ["nvim"] },
-  { name = "*.conf", use = ["nvim"] },
-  { name = "*.toml", use = ["nvim"] },
+  { mime = "text/*", use = ["nvim", "vim"] },
+  { name = "*.conf", use = ["nvim", "vim"] },
+  { name = "*.toml", use = ["nvim", "vim"] },
   { mime = "image/*", use = ["qview", "librewolf", "qutebrowser"] },
 ]
 
