@@ -30,6 +30,7 @@ rules = [
   { url = "*.docx", use = ["libreoffice"] },
   { url = "*.xlsx", use = ["libreoffice"] },
   { url = "*.pptx", use = ["libreoffice"] },
+  { url = "*.pdf", use = ["libreoffice"] },
   { mime = "text/*", use = ["nvim", "vim"] },
   { name = "*.conf", use = ["nvim", "vim"] },
   { name = "*.toml", use = ["nvim", "vim"] },
