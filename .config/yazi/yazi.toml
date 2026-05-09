@@ -32,16 +32,15 @@ rules = [
   { url = "*.pptx", use = ["libreoffice"] },
   { url = "*.pdf", use = ["libreoffice"] },
   { mime = "text/*", use = ["nvim", "vim"] },
-  { name = "*.conf", use = ["nvim", "vim"] },
-  { name = "*.toml", use = ["nvim", "vim"] },
+  { mime = "*.conf", use = ["nvim", "vim"] },
+  { mime = "*.toml", use = ["nvim", "vim"] },
   { mime = "image/*", use = ["qview", "librewolf", "qutebrowser"] },
 ]
 
-[plugin]
 prepend_fetchers = [
-  { id = "git", name = "*", run = "git" },
-  { id = "git", name = "*/", run = "git" },
-  { id = "mime-ext", name = "*", run = "mime-ext.local", prio = "high" },
+  { id = "git", name = "*", run = "git", group = "mime" },
+  { id = "git", name = "*/", run = "git", group = "mime" },
+  { id = "mime-ext", name = "*", run = "mime-ext.local", prio = "high", group = "mime" },
 ]
 
 prepend_preloaders = [

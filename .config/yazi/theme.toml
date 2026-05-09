@@ -7,9 +7,6 @@ rules = [
   { mime = "video/*", fg = "magenta" },
   { mime = "audio/*", fg = "magenta" },
   { mime = "application/zip", fg = "red" },
-  { name = "*.rs", fg = "red" },
-  { name = "*.lua", fg = "blue" },
-  { name = "*.c", fg = "cyan" },
 ]
 
 [status]
