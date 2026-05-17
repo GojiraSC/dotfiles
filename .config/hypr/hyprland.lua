@@ -229,10 +229,11 @@ hl.device({
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("librewolf"))                  -- Main Browser
@@ -259,7 +260,6 @@ hl.bind(mainMod .. " + bracketleft", hl.dsp.exec_cmd("flips"))
 hl.bind(mainMod .. " + bracketright", hl.dsp.exec_cmd("/home/gojira_96/.local/bin/resolve-launch"))      -- Davinci Resolve
 hl.bind(mainMod .. " + R",            hl.dsp.exec_cmd("/usr/lib/rstudio/rstudio"))
 hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("pavucontrol"))            -- Volume Management
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
 
 local ALT = "ALT"
@@ -293,7 +293,7 @@ hl.bind(ALT .. " + P", hl.dsp.exec_cmd('bash -c \'grim "$HOME/Pictures/Screensho
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd('bash -c \'grim -g "$(slurp)" - | wl-copy\''))
 
 -- Power and Printer Controls
-hl.bind(mainMod .. " + End",    hl.dsp.exec_cmd("wlogout"))
+hl.bind(mainMod .. " + End", hl.dsp.exec_cmd("wlogout -b 4 --margin 200 -T 550 -B 550"))
 hl.bind(mainMod .. " + Page_Up", hl.dsp.exec_cmd("system-config-printer"))
 
 -- Window togglefloating + resize + center
