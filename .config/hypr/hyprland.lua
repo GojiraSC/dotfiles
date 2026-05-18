@@ -266,13 +266,14 @@ local ALT = "ALT"
 hl.bind(ALT .. " + V",         hl.dsp.exec_cmd("kitty cava"))           -- Audio Visualizer
 hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty btop"))           -- Terminal-based Resource Management
 hl.bind(ALT .. " + Pause",     hl.dsp.exec_cmd("kitty cmatrix"))
-hl.bind(ALT .. " + Insert",    hl.dsp.exec_cmd("kitty peacock"))        -- Clock
+hl.bind(ALT .. " + Insert",    hl.dsp.exec_cmd("kitty peaclock"))        -- Clock
 hl.bind(ALT .. " + Page_Up",   hl.dsp.exec_cmd("kitty pipes-rs"))
 hl.bind(ALT .. " + E",         hl.dsp.exec_cmd("kitty vim"))            -- Backup Editor
 hl.bind(ALT .. " + C",         hl.dsp.exec_cmd("kitty calcurse"))       -- Calendar
 hl.bind(ALT .. " + L",         hl.dsp.exec_cmd("kitty lazygit"))
 hl.bind(ALT .. " + T",         hl.dsp.exec_cmd("kitty tmux"))
 hl.bind(ALT .. " + equal",     hl.dsp.exec_cmd("kitty calc"))           -- Calculator
+hl.bind(ALT .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseudo-gui"))     -- mp4 player
 
 -- Neovim env
 local home = os.getenv("HOME")
