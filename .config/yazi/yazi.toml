@@ -24,6 +24,9 @@ librewolf = [
 qutebrowser = [
   { run = '/usr/bin/qutebrowser "$@"', orphan = true, desc = "qutebrowser" },
 ]
+mpv = [
+  { run = 'mpv "$@"', orphan = true, desc = "mpv" },
+]
 
 [open]
 rules = [
@@ -35,6 +38,7 @@ rules = [
   { mime = "*.conf", use = ["nvim", "vim"] },
   { mime = "*.toml", use = ["nvim", "vim"] },
   { mime = "image/*", use = ["qview", "librewolf", "qutebrowser"] },
+  { mime = "video/*", use = ["mpv", "librewolf", "qutebrowser"] },
 ]
 
 prepend_fetchers = [
