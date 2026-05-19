@@ -62,6 +62,18 @@ tab_bar: (
 lyrics: (
     timestamp: false
 ),
+cava: (
+    bar_symbols: ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
+    bar_width: 1,
+    bar_spacing: 1,
+    orientation: Bottom,
+    bar_color: Gradient({
+          0: "rgb(169, 182, 101)",
+         50: "rgb(125, 174, 163)",
+        100: "rgb(216, 166, 87)",
+    }),
+),
+),
 browser_song_format: [
 (
     kind: Group([

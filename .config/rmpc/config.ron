@@ -35,6 +35,18 @@
         vertical_align: Center,
         horizontal_align: Center,
     ),
+    cava: (
+    framerate: 60,
+    autosens: true,
+    sensitivity: 100,
+    input: (
+        method: Fifo,
+        source: "/tmp/mpd.fifo",
+        sample_rate: 44100,
+        channels: 2,
+        sample_bits: 16,
+    ),
+),
     keybinds: (
         global: {
             "q":          Quit,
@@ -215,9 +227,21 @@
                                                 pane: Pane(Empty())
                                             ),
                                             (
-                                                size: "100%",
+                                            size: "100%",
+                                            pane: Split(
+                                                direction: Vertical,
+                                                panes: [
+                                            (
+                                            size: "70%",
                                                 pane: Pane(Queue)
-                                            ),
+                                             ),
+                                                (
+                                            size: "30%",
+                                                pane: Pane(Cava)
+                                                   ),
+                                                      ]
+                                                   )
+                                             ),
                                         ]
                                     )
                                 ),
