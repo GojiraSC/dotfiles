@@ -24,17 +24,21 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
     source "$KITTY_INSTALLATION_DIR/shell-integration/zsh/kitty.zsh"
 fi
 
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey "^[[3~" delete-char
 
 autoload -Uz compinit
-compinit
+if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'  # case insensitive
 
-
-echo 'export PATH=~/bin:$PATH' >> ~/.zsh_profile
-source ~/.zsh_profile
+export PATH=~/bin:$PATH
 
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
