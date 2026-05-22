@@ -34,6 +34,7 @@ rules = [
   { url = "*.xlsx", use = ["libreoffice"] },
   { url = "*.pptx", use = ["libreoffice"] },
   { url = "*.pdf", use = ["libreoffice"] },
+  { url = "*.csv", use = ["libreoffice"] },
   { mime = "text/*", use = ["nvim", "vim"] },
   { mime = "*.conf", use = ["nvim", "vim"] },
   { mime = "*.toml", use = ["nvim", "vim"] },
