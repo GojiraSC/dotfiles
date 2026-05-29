@@ -9,6 +9,8 @@ hl.monitor({
     mode     = "2560x1440@165",
     position = "3440x0",
     scale    = "1",
+    bitdepth = 10,
+    cm       = "hdr",
 })
 
 hl.monitor({
@@ -16,6 +18,9 @@ hl.monitor({
    mode      = "3440x1440@144",
    position  = "0x0",
    scale     = "1",
+   bitdepth  = 10,
+   cm        = "hdr",
+   sdrsaturation = 1.20,
 })
 
 
@@ -41,8 +46,8 @@ local menu        = "~/.config/rofi/launchers/type-6/launcher.sh"
 hl.on("hyprland.start", function()
    hl.exec_cmd("waybar & librewolf")
    hl.exec_cmd("awww-daemon")
-   hl.exec_cmd("awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-rrxrl1.png")
-   hl.exec_cmd("awww img -o DP-2 $HOME/Pictures/Wallpapers/wallhaven-1jj8l3.jpg")
+   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-rrxrl1.png")
+   hl.exec_cmd("sleep 2 && awww img -o DP-2 $HOME/Pictures/Wallpapers/wallhaven-1jj8l3.jpg")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("mako")
@@ -231,13 +236,14 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("librewolf"))                  -- Main Browser
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("qutebrowser"))        -- Backup Browser
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("libreoffice"))                -- Word,Excel,PowerPoint Processor
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("kitty nvim"))                 -- Terminal-based Editor
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("kicad"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("qview"))                      -- Image Viewer
@@ -245,7 +251,6 @@ hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obs"))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("equibop"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("steam"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zoom"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("spotify"))
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("usenti"))
 hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd("visualboyadvance-m"))     -- GBA Emulator
 hl.bind(mainMod .. " + SHIFT + comma", hl.dsp.exec_cmd("mgba-qt"))        -- Backup GBA Emulator
@@ -273,7 +278,10 @@ hl.bind(ALT .. " + C",         hl.dsp.exec_cmd("kitty calcurse"))       -- Calen
 hl.bind(ALT .. " + L",         hl.dsp.exec_cmd("kitty lazygit"))
 hl.bind(ALT .. " + T",         hl.dsp.exec_cmd("kitty tmux"))
 hl.bind(ALT .. " + equal",     hl.dsp.exec_cmd("kitty calc"))           -- Calculator
+hl.bind(ALT .. " + P", hl.dsp.exec_cmd("kitty ncspot"))                 -- TUI Spotify
+hl.bind(ALT .. " + R", hl.dsp.exec_cmd("kitty rmpc"))                   -- TUI Music Player
 hl.bind(ALT .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseudo-gui"))     -- mp4 player
+
 
 -- Neovim env
 local home = os.getenv("HOME")
