@@ -42,3 +42,34 @@ nnoremap <C-k> <C-w>k
 
 " Vim Tree
 nnoremap <leader>e :Explore<CR>
+
+" Faster line navigation
+nnoremap H ^
+nnoremap L $
+
+" Stay in visual mode when indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" Move selected lines up/down
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Keep cursor centered when scrolling
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Keep cursor centered when searching
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Paste without overwriting register
+vnoremap p "_dP
+
+" Delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" Quick vertical split and switch
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
