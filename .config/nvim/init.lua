@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
-vim.opt.guicursor = "n-v-c:block,i-ci-ve:block-blinkwait300-blinkon200-blinkoff150,r-cr:hor20,o:hor50"
+vim.opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:block-blinkwait300-blinkon200-blinkoff150-Cursor"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 3
@@ -10,6 +10,12 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.o.title = true
 vim.o.titlestring = "nvim %t"
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#fabd2f" })
+  end,
+})
 
 
 -- Basic Keymaps
