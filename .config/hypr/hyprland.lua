@@ -11,6 +11,8 @@ hl.monitor({
     scale    = "1",
     bitdepth = 10,
     cm       = "hdr",
+    sdrbrightness = 1.0,
+    sdrsaturation = 1.0,
 })
 
 hl.monitor({
@@ -20,7 +22,8 @@ hl.monitor({
    scale     = "1",
    bitdepth  = 10,
    cm        = "hdr",
-   sdrsaturation = 1.20,
+   sdrbrightness = 0.6,
+   sdrsaturation = 1.15,
 })
 
 
@@ -46,8 +49,8 @@ local menu        = "~/.config/rofi/launchers/type-6/launcher.sh"
 hl.on("hyprland.start", function()
    hl.exec_cmd("waybar & librewolf")
    hl.exec_cmd("awww-daemon")
-   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-rrxrl1.png")
-   hl.exec_cmd("sleep 2 && awww img -o DP-2 $HOME/Pictures/Wallpapers/wallhaven-1jj8l3.jpg")
+   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-5y5537.png")
+   hl.exec_cmd("sleep 2 && awww img -o DP-2 $HOME/Pictures/Wallpapers/wallhaven-7p8eq3.png")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("mako")
@@ -118,8 +121,8 @@ hl.config({
         },
         blur = {
             enabled  = true,
-            size     = 3,
-            passes   = 1,
+            size     = 2,
+            passes   = 2,
             vibrancy = 0.1696,
         },
     },
@@ -290,6 +293,10 @@ hl.env("PATH", home .. "/.local/share/bob/nvim-bin:" .. home .. "/.cargo/bin:" .
 
 -- QT Stuff
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+
+-- Steam Stuff
+env = PROTON_ENABLE_WAYLAND,1
+env = DXVK_HDR,1
 
 
 -- Select area → annotate in Swappy → save
