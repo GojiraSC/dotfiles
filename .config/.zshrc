@@ -7,7 +7,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
-pokeshell -s feraligatr 2>/dev/null
+pokeshell -s tyranitar 2>/dev/null
 eval "$(starship init zsh)"
 
 export EDITOR=nvim
