@@ -5,7 +5,7 @@
     address: "/tmp/mpd_socket",
     password: None,
     theme: Some("gruvbox"),
-    cache_dir: Some("/tmp/rmpc/cache"),
+    cache_dir: Some("~/.cache/rmpc"),
     on_song_change: None,
     volume_step: 5,
     max_fps: 30,
