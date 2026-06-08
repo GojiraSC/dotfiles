@@ -11,9 +11,18 @@ vim.opt.smartindent = true
 vim.o.title = true
 vim.o.titlestring = "nvim %t"
 
+
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#fabd2f" })
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "org", "text", "gitcommit" },
+  callback = function()
+    vim.opt_local.spell = true
+    vim.opt_local.spelllang = "en_us"
   end,
 })
 
