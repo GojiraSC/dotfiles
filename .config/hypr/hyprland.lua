@@ -15,16 +15,16 @@ hl.monitor({
     sdrsaturation = 1.0,
 })
 
-hl.monitor({
-   output    = "DP-2",
-   mode      = "3440x1440@144",
-   position  = "0x0",
-   scale     = "1",
-   bitdepth  = 10,
-   cm        = "hdr",
-   sdrbrightness = 0.6,
-   sdrsaturation = 1.15,
-})
+--hl.monitor({
+--   output    = "DP-2",
+--   mode      = "3440x1440@144",
+--   position  = "0x0",
+--   scale     = "1",
+--   bitdepth  = 10,
+--   cm        = "hdr",
+--   sdrbrightness = 0.6,
+--   sdrsaturation = 1.15,
+--})
 
 
 ---------------------
@@ -253,7 +253,6 @@ hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("qview"))                      -- Ima
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obs"))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("equibop"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("steam"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zoom"))
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("usenti"))
 hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd("visualboyadvance-m"))     -- GBA Emulator
 hl.bind(mainMod .. " + SHIFT + comma", hl.dsp.exec_cmd("mgba-qt"))        -- Backup GBA Emulator
