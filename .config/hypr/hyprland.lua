@@ -15,17 +15,6 @@ hl.monitor({
     sdrsaturation = 1.0,
 })
 
---hl.monitor({
---   output    = "DP-2",
---   mode      = "3440x1440@144",
---   position  = "0x0",
---   scale     = "1",
---   bitdepth  = 10,
---   cm        = "hdr",
---   sdrbrightness = 0.6,
---   sdrsaturation = 1.15,
---})
-
 
 ---------------------
 ---- MY PROGRAMS ----
@@ -47,10 +36,11 @@ local menu        = "~/.config/rofi/launchers/type-6/launcher.sh"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
+   hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+   hl.exec_cmd("systemctl --user start hyprland-session.target")
    hl.exec_cmd("waybar & librewolf")
    hl.exec_cmd("awww-daemon")
    hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-5y5537.png")
-   hl.exec_cmd("sleep 2 && awww img -o DP-2 $HOME/Pictures/Wallpapers/wallhaven-7p8eq3.png")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("mako")
@@ -262,11 +252,9 @@ hl.bind(mainMod .. " + slash", hl.dsp.exec_cmd("snes9x-gtk"))             -- SNE
 hl.bind(mainMod .. " + BackSpace", hl.dsp.exec_cmd("ares"))               -- N64 Emulator
 hl.bind(mainMod .. " + apostrophe", hl.dsp.exec_cmd("fceux"))             -- NES Emulator
 hl.bind(mainMod .. " + semicolon", hl.dsp.exec_cmd("desmume"))            -- DS Emulator
-hl.bind(mainMod .. " + equal", hl.dsp.exec_cmd("dbeaver"))
 hl.bind(mainMod .. " + backslash", hl.dsp.exec_cmd("slack"))
 hl.bind(mainMod .. " + bracketleft", hl.dsp.exec_cmd("flips"))
 hl.bind(mainMod .. " + bracketright", hl.dsp.exec_cmd("/home/gojira_96/.local/bin/resolve-launch"))      -- Davinci Resolve
-hl.bind(mainMod .. " + R",            hl.dsp.exec_cmd("/usr/lib/rstudio/rstudio"))
 hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("pavucontrol"))            -- Volume Management
 
 
