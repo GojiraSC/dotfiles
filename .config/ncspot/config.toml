@@ -1,2 +1,19 @@
 [theme]
-theme = "gruvbox"
+primary = "#ebdbb2"
+secondary = "#a89984"
+title = "#fabd2f"
+playing = "#b8bb26"
+playing_selected = "#b8bb26"
+playing_bg = "#3c3836"
+highlight = "#ebdbb2"
+highlight_bg = "#504945"
+error = "#fb4934"
+error_bg = "#282828"
+statusbar = "#282828"
+statusbar_progress = "#fabd2f"
+statusbar_bg = "#a89984"
+cmdline = "#ebdbb2"
+cmdline_bg = "#282828"
+
+[keybindings]
+"Space" = "playpause"
