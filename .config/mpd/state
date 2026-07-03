@@ -1,9 +1,10 @@
 sw_volume: 100
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
-state: stop
-current: 150
-random: 0
+state: pause
+current: 161
+time: 15.676
+random: 1
 repeat: 1
 single: 1
 consume: 0
@@ -18,8 +19,8 @@ Title: Andaron Saga OST (Bonus Track): 00 Trailer Part 1 (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251157
-added: 1779251157
+mtime: 1783109125
+added: 1783109125
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/SQWdzhfkbJ4.opus
 Time: 305.64
@@ -27,8 +28,8 @@ Title: Andaron Saga OST (Bonus Track): 00 Trailer Part 2 (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251172
-added: 1779251172
+mtime: 1783109127
+added: 1783109127
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/59r0ynoLmSA.opus
 Time: 42.14
@@ -36,8 +37,8 @@ Title: Andaron Saga OST: 01 Gateway into Aurora (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251178
-added: 1779251178
+mtime: 1783109131
+added: 1783109131
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ufxpuoAf9HY.opus
 Time: 334.08
@@ -45,8 +46,8 @@ Title: Andaron Saga OST: 02 Ballad of the Gallant Warrior (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251193
-added: 1779251193
+mtime: 1783109135
+added: 1783109135
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/7eJvvPbNyNs.opus
 Time: 276.8
@@ -54,8 +55,8 @@ Title: Andaron Saga OST: 03 New Beginnings (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251204
-added: 1779251204
+mtime: 1783109138
+added: 1783109138
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/XBgbfq0m2q4.opus
 Time: 162.1
@@ -63,8 +64,8 @@ Title: Andaron Saga OST: 04 Rambunctious Ruffians (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251213
-added: 1779251213
+mtime: 1783109479
+added: 1783109479
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/nGlXcPH-ycQ.opus
 Time: 76.98
@@ -72,8 +73,8 @@ Title: Andaron Saga OST: 05 En Garde! (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251219
-added: 1779251219
+mtime: 1783109144
+added: 1783109144
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/X3ybMsbpo5A.opus
 Time: 61.52
@@ -81,8 +82,8 @@ Title: Andaron Saga OST: 06 Submit! (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251233
-added: 1779251233
+mtime: 1783109147
+added: 1783109147
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/H6JZGrLj--s.opus
 Time: 96.4
@@ -90,8 +91,8 @@ Title: Andaron Saga OST: 07 Come with Us! (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251249
-added: 1779251249
+mtime: 1783109150
+added: 1783109150
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/AbkIa5OsTOc.opus
 Time: 98.02
@@ -99,8 +100,8 @@ Title: Andaron Saga OST: 08 The Rose Knight (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251256
-added: 1779251256
+mtime: 1783109154
+added: 1783109154
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/N08nqpeONBs.opus
 Time: 31.240000000000002
@@ -108,8 +109,8 @@ Title: Andaron Saga OST: 09 Healing (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251267
-added: 1779251267
+mtime: 1783109158
+added: 1783109158
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/XG1fUdwqvVM.opus
 Time: 110.36
@@ -117,8 +118,8 @@ Title: Andaron Saga OST: 10 Wondrous Bard (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251282
-added: 1779251282
+mtime: 1783109162
+added: 1783109162
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/KNW8axRVgm8.opus
 Time: 46.1
@@ -126,8 +127,8 @@ Title: Andaron Saga OST: 11 High Spirits (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251289
-added: 1779251289
+mtime: 1783109165
+added: 1783109165
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/7tXGqnM-3Kk.opus
 Time: 97.78
@@ -135,8 +136,8 @@ Title: Andaron Saga OST: 12 His Portliness (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251295
-added: 1779251295
+mtime: 1783109168
+added: 1783109168
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/baUeVJK4NYk.opus
 Time: 112.2
@@ -144,8 +145,8 @@ Title: Andaron Saga OST: 13 Grasp at Victory (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251307
-added: 1779251307
+mtime: 1783109485
+added: 1783109485
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/CXY7HqQyuy4.opus
 Time: 62.160000000000004
@@ -153,8 +154,8 @@ Title: Andaron Saga OST: 14 Challengers (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251314
-added: 1779251314
+mtime: 1783109175
+added: 1783109175
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/GS-qAq_Ff9Y.opus
 Time: 162.18
@@ -162,8 +163,8 @@ Title: Andaron Saga OST: 15 Fortuitous Outcome (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251324
-added: 1779251324
+mtime: 1783109490
+added: 1783109490
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/FBJXDtsTEtI.opus
 Time: 251.1
@@ -171,8 +172,8 @@ Title: Andaron Saga OST: 16 The Flaming Archer (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251338
-added: 1779251338
+mtime: 1783109183
+added: 1783109183
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/PzJ4rBsm3Zc.opus
 Time: 161.32
@@ -180,8 +181,8 @@ Title: Andaron Saga OST: 17 A Rose's Honor (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251346
-added: 1779251346
+mtime: 1783109187
+added: 1783109187
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/yLnMNOmy_d0.opus
 Time: 187.06
@@ -189,8 +190,8 @@ Title: Andaron Saga OST: 18 Concealed (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251355
-added: 1779251355
+mtime: 1783109499
+added: 1783109499
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/1g9AMhFBLTI.opus
 Time: 127.08
@@ -198,8 +199,8 @@ Title: Andaron Saga OST: 19 Innocent Steps (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251362
-added: 1779251362
+mtime: 1783109194
+added: 1783109194
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/YfGTQFizp_8.opus
 Time: 153.94
@@ -207,8 +208,8 @@ Title: Andaron Saga OST: 20 Heart of Steel (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251369
-added: 1779251369
+mtime: 1783109198
+added: 1783109198
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/FEiuIj0Kd8g.opus
 Time: 113.2
@@ -216,8 +217,8 @@ Title: Andaron Saga OST: 21 The Rebel King (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251377
-added: 1779251377
+mtime: 1783109201
+added: 1783109201
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/AONhxg-vpIY.opus
 Time: 162.44
@@ -225,8 +226,8 @@ Title: Andaron Saga OST: 22 Until Next We Meet (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251387
-added: 1779251387
+mtime: 1783109203
+added: 1783109203
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/etx238oejiE.opus
 Time: 125.24000000000001
@@ -234,8 +235,8 @@ Title: Andaron Saga OST: 23 Glorious Morning (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251395
-added: 1779251395
+mtime: 1783109206
+added: 1783109206
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vJwRpjYlVCg.opus
 Time: 116.10000000000001
@@ -243,8 +244,8 @@ Title: Andaron Saga OST: 24 Besieged (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251401
-added: 1779251401
+mtime: 1783109210
+added: 1783109210
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/7vtmRrc5P6Y.opus
 Time: 137.26
@@ -252,8 +253,8 @@ Title: Andaron Saga OST: 25 Marching Across the Land (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251408
-added: 1779251408
+mtime: 1783109213
+added: 1783109213
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/v_wAV9XzGtY.opus
 Time: 206.16
@@ -261,8 +262,8 @@ Title: Andaron Saga OST: 26 Vikings of Hornheim (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251415
-added: 1779251415
+mtime: 1783109092
+added: 1783109092
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/5xpyoIJUF_w.opus
 Time: 202.72
@@ -270,8 +271,8 @@ Title: Andaron Saga OST: 27 Raiders of the Sea (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251424
-added: 1779251424
+mtime: 1783109216
+added: 1783109216
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/8D2TcXTxFFY.opus
 Time: 53.94
@@ -279,8 +280,8 @@ Title: Andaron Saga OST: 28 Uphill Struggle (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251429
-added: 1779251429
+mtime: 1783109219
+added: 1783109219
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/-ir0YX9ClPg.opus
 Time: 71.96000000000001
@@ -288,8 +289,8 @@ Title: Andaron Saga OST: 29 Formidable Foes (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251435
-added: 1779251435
+mtime: 1783109222
+added: 1783109222
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/SmOn1w-4lzE.opus
 Time: 89.44
@@ -297,8 +298,8 @@ Title: Andaron Saga OST: 30 Armory (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251441
-added: 1779251441
+mtime: 1783109225
+added: 1783109225
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/qI9wppWvPsg.opus
 Time: 64.98
@@ -306,8 +307,8 @@ Title: Andaron Saga OST: 31 Vendor (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251448
-added: 1779251448
+mtime: 1783109229
+added: 1783109229
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/81TApVnsK00.opus
 Time: 147.78
@@ -315,8 +316,8 @@ Title: Andaron Saga OST: 32 Danger (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251453
-added: 1779251453
+mtime: 1783109233
+added: 1783109233
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/PekQWVqz8uo.opus
 Time: 205.86
@@ -324,8 +325,8 @@ Title: Andaron Saga OST: 33 Under the Moonlight (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251460
-added: 1779251460
+mtime: 1783109237
+added: 1783109237
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/lhScgM0tDUQ.opus
 Time: 153.24
@@ -333,8 +334,8 @@ Title: Andaron Saga OST: 34 I'm an Expert (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251467
-added: 1779251467
+mtime: 1783109241
+added: 1783109241
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/fwcF8-bRfKY.opus
 Time: 209.28
@@ -342,8 +343,8 @@ Title: Andaron Saga OST: 35 Riding Through the Fields (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251473
-added: 1779251473
+mtime: 1783109245
+added: 1783109245
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/aPHtp8x5_fM.opus
 Time: 152.86
@@ -351,8 +352,8 @@ Title: Andaron Saga OST: 36 Renegades in the Rain (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251478
-added: 1779251478
+mtime: 1783109248
+added: 1783109248
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/UWE6C4WkkP0.opus
 Time: 100.24000000000001
@@ -360,8 +361,8 @@ Title: Andaron Saga OST: 37 Broken Heir (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251484
-added: 1779251484
+mtime: 1783109252
+added: 1783109252
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/TleU8ptxjr0.opus
 Time: 156.52
@@ -369,8 +370,8 @@ Title: Andaron Saga OST: 38 First Light (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251491
-added: 1779251491
+mtime: 1783109255
+added: 1783109255
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/qdPIU4zxIB0.opus
 Time: 171.98
@@ -378,8 +379,8 @@ Title: Andaron Saga OST: 39 Wicked Ploy (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251499
-added: 1779251499
+mtime: 1783109260
+added: 1783109260
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vA3w3Z-bSDk.opus
 Time: 203.64000000000001
@@ -387,8 +388,8 @@ Title: Andaron Saga OST: 40 Whisper in the Sky (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251510
-added: 1779251510
+mtime: 1783109262
+added: 1783109262
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/k6DcvXgDOrc.opus
 Time: 172.06
@@ -396,8 +397,8 @@ Title: Andaron Saga OST: 41 To Tame the Heavens (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251516
-added: 1779251516
+mtime: 1783109266
+added: 1783109266
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/aORVy_JjGWQ.opus
 Time: 57.44
@@ -405,8 +406,8 @@ Title: Andaron Saga OST: 42 Dragonslayer (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251521
-added: 1779251521
+mtime: 1783109268
+added: 1783109268
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/yGoIZ990WDY.opus
 Time: 78.78
@@ -414,8 +415,8 @@ Title: Andaron Saga OST: 43 Wyverns Descent (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251527
-added: 1779251527
+mtime: 1783109272
+added: 1783109272
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/CeEoWOc_Y0A.opus
 Time: 126.78
@@ -423,8 +424,8 @@ Title: Andaron Saga OST: 44 Civil March (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251533
-added: 1779251533
+mtime: 1783109275
+added: 1783109275
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/o6Msgq57au8.opus
 Time: 67.28
@@ -432,8 +433,8 @@ Title: Andaron Saga OST: 45 Pyrion's Wrath (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251538
-added: 1779251538
+mtime: 1783109279
+added: 1783109279
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/4zN3oMkrIpo.opus
 Time: 202.32
@@ -441,8 +442,8 @@ Title: Andaron Saga OST: 46 At What Cost (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251545
-added: 1779251545
+mtime: 1783109282
+added: 1783109282
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/2BPTlWJvL50.opus
 Time: 102.32000000000001
@@ -450,8 +451,8 @@ Title: Andaron Saga OST: 47 Dim Light (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251551
-added: 1779251551
+mtime: 1783109285
+added: 1783109285
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/oAq-mDOaMH8.opus
 Time: 270.36
@@ -459,8 +460,8 @@ Title: Andaron Saga OST: 48 Silvermist (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251558
-added: 1779251558
+mtime: 1783109289
+added: 1783109289
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ZOZLJzOnBp4.opus
 Time: 140.98
@@ -468,8 +469,8 @@ Title: Andaron Saga OST: 49 A Step into the Unknown (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251564
-added: 1779251564
+mtime: 1783109293
+added: 1783109293
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/0QegMcmuy0w.opus
 Time: 115.58
@@ -477,8 +478,8 @@ Title: Andaron Saga OST: 50 The Emerging Fighters (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251570
-added: 1779251570
+mtime: 1783109297
+added: 1783109297
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/1bRHWV-RYLc.opus
 Time: 54.24
@@ -486,8 +487,8 @@ Title: Andaron Saga OST: 51 Frightening Beings (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251575
-added: 1779251575
+mtime: 1783109299
+added: 1783109299
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/XHVXOxSqhMg.opus
 Time: 70.60000000000001
@@ -495,8 +496,8 @@ Title: Andaron Saga OST: 52 Demonic Assault (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251580
-added: 1779251580
+mtime: 1783109303
+added: 1783109303
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/x-pIubH71CA.opus
 Time: 56.980000000000004
@@ -504,8 +505,8 @@ Title: Andaron Saga OST: 53 The Tormentor (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251585
-added: 1779251585
+mtime: 1783109307
+added: 1783109307
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ahd0qXw-zNg.opus
 Time: 139.68
@@ -513,8 +514,8 @@ Title: Andaron Saga OST: 54 Secrets of the Shrine (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251592
-added: 1779251592
+mtime: 1783109310
+added: 1783109310
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vpO6psJ_knw.opus
 Time: 135.86
@@ -522,8 +523,8 @@ Title: Andaron Saga OST: 55 A Concerning Matter (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251599
-added: 1779251599
+mtime: 1783109313
+added: 1783109313
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/8LM_uABLv2c.opus
 Time: 115.48
@@ -531,8 +532,8 @@ Title: Andaron Saga OST: 56 Snooping as Usual (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251605
-added: 1779251605
+mtime: 1783109317
+added: 1783109317
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/LqPUbqlhCKM.opus
 Time: 250.18
@@ -540,8 +541,8 @@ Title: Andaron Saga OST: 57 Fiendish Chant (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251612
-added: 1779251612
+mtime: 1783109321
+added: 1783109321
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/bfKNSJhaz_g.opus
 Time: 177.36
@@ -549,8 +550,8 @@ Title: Andaron Saga OST: 58 Call of Demise (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251619
-added: 1779251619
+mtime: 1783109324
+added: 1783109324
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vGxHe7LGZIk.opus
 Time: 113.06
@@ -558,8 +559,8 @@ Title: Andaron Saga OST: 59 Dragon King (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251624
-added: 1779251624
+mtime: 1783109328
+added: 1783109328
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ejtXEB_8y5U.opus
 Time: 241.4
@@ -567,8 +568,8 @@ Title: Andaron Saga OST: 60 Riding to the Skies (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251631
-added: 1779251631
+mtime: 1783109332
+added: 1783109332
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/gfJ7I7akgWQ.opus
 Time: 96.94
@@ -576,8 +577,8 @@ Title: Andaron Saga OST: 61 Grand King (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251636
-added: 1779251636
+mtime: 1783109336
+added: 1783109336
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/rd1qSC7AjdE.opus
 Time: 172.64000000000001
@@ -585,8 +586,8 @@ Title: Andaron Saga OST: 62 The Die that Was Cast (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251643
-added: 1779251643
+mtime: 1783109339
+added: 1783109339
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/r6FuVwWfTvY.opus
 Time: 92.28
@@ -594,8 +595,8 @@ Title: Andaron Saga OST: 63 Andaron Army (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251648
-added: 1779251648
+mtime: 1783109506
+added: 1783109506
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/xw56okCkLAk.opus
 Time: 100.2
@@ -603,8 +604,8 @@ Title: Andaron Saga OST: 64 Pure Steel (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251653
-added: 1779251653
+mtime: 1783109345
+added: 1783109345
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/_xJXqm8wUKQ.opus
 Time: 112.3
@@ -612,8 +613,8 @@ Title: Andaron Saga OST: 65 Eldigan the Lionheart (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251660
-added: 1779251660
+mtime: 1783109348
+added: 1783109348
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/gL7WDevcy-I.opus
 Time: 203.4
@@ -621,8 +622,8 @@ Title: Andaron Saga OST: 66 Rallying to Freedom (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251667
-added: 1779251667
+mtime: 1783109352
+added: 1783109352
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/jiX1mJTqY1I.opus
 Time: 214.98000000000002
@@ -630,8 +631,8 @@ Title: Andaron Saga OST: 67 My Affection for You (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251673
-added: 1779251673
+mtime: 1783109355
+added: 1783109355
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ix2Ata3VyXg.opus
 Time: 165.56
@@ -639,8 +640,8 @@ Title: Andaron Saga OST: 68 Blissful Affair (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251680
-added: 1779251680
+mtime: 1783109359
+added: 1783109359
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/GsXay9u__GM.opus
 Time: 146.02
@@ -648,8 +649,8 @@ Title: Andaron Saga OST: 69 Happy Memories (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251687
-added: 1779251687
+mtime: 1783109363
+added: 1783109363
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/hBy2p0fU8A0.opus
 Time: 262.28000000000003
@@ -657,8 +658,8 @@ Title: Andaron Saga OST: 70 Storm in Malthrak (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251695
-added: 1779251695
+mtime: 1783109367
+added: 1783109367
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/-0hl46tNvSs.opus
 Time: 147.6
@@ -666,8 +667,8 @@ Title: Andaron Saga OST: 71 Warmonger (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251702
-added: 1779251702
+mtime: 1783109512
+added: 1783109512
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/WiawfVN5iQY.opus
 Time: 44.06
@@ -675,8 +676,8 @@ Title: Andaron Saga OST: 72 Arena Fight (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251709
-added: 1779251709
+mtime: 1783109373
+added: 1783109373
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/b-5nhNuc1_4.opus
 Time: 251.66
@@ -684,8 +685,8 @@ Title: Andaron Saga OST: 73 Decisive Battle (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251717
-added: 1779251717
+mtime: 1783109378
+added: 1783109378
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/O329bCcpGTg.opus
 Time: 191.24
@@ -693,8 +694,8 @@ Title: Andaron Saga OST: 74 Steel Plated March (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251725
-added: 1779251725
+mtime: 1783109381
+added: 1783109381
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/95vfTB7fbB8.opus
 Time: 184.06
@@ -702,8 +703,8 @@ Title: Andaron Saga OST: 75 Brother's Showdown (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251732
-added: 1779251732
+mtime: 1783109385
+added: 1783109385
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/KFec_RarGkY.opus
 Time: 118.28
@@ -711,8 +712,8 @@ Title: Andaron Saga OST: 76 A Grim Fate (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251737
-added: 1779251737
+mtime: 1783109389
+added: 1783109389
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ZYyd_shsIU0.opus
 Time: 294.2
@@ -720,8 +721,8 @@ Title: Andaron Saga OST: 77 Last Rites (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251744
-added: 1779251744
+mtime: 1783109393
+added: 1783109393
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Ub7yL2oeDQk.opus
 Time: 147.86
@@ -729,8 +730,8 @@ Title: Andaron Saga OST: 78 How Great a Loss (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251751
-added: 1779251751
+mtime: 1783109397
+added: 1783109397
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/yzwkeEdOINs.opus
 Time: 176.32
@@ -738,8 +739,8 @@ Title: Andaron Saga OST: 79 Rising Ambition (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251757
-added: 1779251757
+mtime: 1783109400
+added: 1783109400
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Y02U01u5rDI.opus
 Time: 312.18
@@ -747,8 +748,8 @@ Title: Andaron Saga OST: 80 Run! (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251766
-added: 1779251766
+mtime: 1783109405
+added: 1783109405
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/zeLPpS8Csfk.opus
 Time: 241.74
@@ -756,8 +757,8 @@ Title: Andaron Saga OST: 81 Allegiance Unveiled (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251774
-added: 1779251774
+mtime: 1783109407
+added: 1783109407
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vy-lRQt__v8.opus
 Time: 310.66
@@ -765,8 +766,8 @@ Title: Andaron Saga OST: 82 Broken Vows - The Memories (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251793
-added: 1779251793
+mtime: 1783109411
+added: 1783109411
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Fu1auldqqVI.opus
 Time: 262.48
@@ -774,8 +775,8 @@ Title: Andaron Saga OST: 83 Broken Vows - The Journey Up Ahead (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251809
-added: 1779251809
+mtime: 1783109415
+added: 1783109415
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/wdH99M7oIes.opus
 Time: 143.32
@@ -783,8 +784,8 @@ Title: Andaron Saga OST: 84 Regathering Strength (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251821
-added: 1779251821
+mtime: 1783109417
+added: 1783109417
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/8nUkoVhGiNM.opus
 Time: 134.16
@@ -792,8 +793,8 @@ Title: Andaron Saga OST: 85 Insidious Approach (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251828
-added: 1779251828
+mtime: 1783109421
+added: 1783109421
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/4I84Q6mfgdw.opus
 Time: 127.18
@@ -801,8 +802,8 @@ Title: Andaron Saga OST: 86 Unshakable Resolve (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251835
-added: 1779251835
+mtime: 1783109425
+added: 1783109425
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/RG25KxuT5Jw.opus
 Time: 192.82
@@ -810,8 +811,8 @@ Title: Andaron Saga OST: 87 Serenade of Desolation (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251843
-added: 1779251843
+mtime: 1783109429
+added: 1783109429
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ArwZtmARyiQ.opus
 Time: 327.12
@@ -819,8 +820,8 @@ Title: Andaron Saga OST: 88 Sailing in Search of Hope (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251853
-added: 1779251853
+mtime: 1783109433
+added: 1783109433
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/w9s3amoh-SA.opus
 Time: 232.22
@@ -828,8 +829,8 @@ Title: Andaron Saga OST: 89 Retribution (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251863
-added: 1779251863
+mtime: 1783109438
+added: 1783109438
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/rbiKUwMMrLE.opus
 Time: 180.9
@@ -837,8 +838,8 @@ Title: Andaron Saga OST: 90 Fall From Grace (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251872
-added: 1779251872
+mtime: 1783109441
+added: 1783109441
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ek6shg159h4.opus
 Time: 146.94
@@ -846,8 +847,8 @@ Title: Andaron Saga OST: 91 Grand Betrayal (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251881
-added: 1779251881
+mtime: 1783109445
+added: 1783109445
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/44dte0GWLIE.opus
 Time: 96.28
@@ -855,8 +856,8 @@ Title: Andaron Saga OST: 92 Forbidden Knowledge (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251888
-added: 1779251888
+mtime: 1783109448
+added: 1783109448
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/tKcgoQRl11U.opus
 Time: 247.28
@@ -864,8 +865,8 @@ Title: Andaron Saga OST: 93 Skadi's Respite (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251897
-added: 1779251897
+mtime: 1783109451
+added: 1783109451
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/4hLok7hZcvA.opus
 Time: 183.26
@@ -873,8 +874,8 @@ Title: Andaron Saga OST: 94 Beat of the Terror (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251904
-added: 1779251904
+mtime: 1783109455
+added: 1783109455
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ZfPbULW8p-M.opus
 Time: 76.06
@@ -882,8 +883,8 @@ Title: Andaron Saga OST: 95 Void of Helheim (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251909
-added: 1779251909
+mtime: 1783109457
+added: 1783109457
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/PxhP3DSTDWA.opus
 Time: 59.7
@@ -891,8 +892,8 @@ Title: Andaron Saga OST: 96 Witchcraft (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251914
-added: 1779251914
+mtime: 1783109460
+added: 1783109460
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ByLRvZ7xx3E.opus
 Time: 57.4
@@ -900,8 +901,8 @@ Title: Andaron Saga OST: 97 Herald of the Gods (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251919
-added: 1779251919
+mtime: 1783109464
+added: 1783109464
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Hvz0F7oWdlw.opus
 Time: 64.48
@@ -909,8 +910,8 @@ Title: Andaron Saga OST: 98 Viking's Assault (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251926
-added: 1779251926
+mtime: 1783109466
+added: 1783109466
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ak1H125ix8E.opus
 Time: 282.26
@@ -918,8 +919,8 @@ Title: Andaron Saga OST: 99 Call of the Void (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251936
-added: 1779251936
+mtime: 1783110597
+added: 1783110597
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/6BQ4sohWaWc.opus
 Time: 306.24
@@ -927,8 +928,8 @@ Title: Andaron Saga OST: 100 Dragonhand (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251946
-added: 1779251946
+mtime: 1783110616
+added: 1783110616
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/jyGtDjaZEoY.opus
 Time: 121.7
@@ -936,8 +937,8 @@ Title: Andaron Saga OST: 101 Snake of the Dead (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251952
-added: 1779251952
+mtime: 1783110659
+added: 1783110659
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/duOFbM44geE.opus
 Time: 167.24
@@ -945,8 +946,8 @@ Title: Andaron Saga OST: 102 Southern Sand Land (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251960
-added: 1779251960
+mtime: 1783110678
+added: 1783110678
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/CHD2EUi_jA0.opus
 Time: 226.22
@@ -954,8 +955,8 @@ Title: Andaron Saga OST: 103 Schemes of Sand (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251975
-added: 1779251975
+mtime: 1783114471
+added: 1783114471
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/IeUviibhevU.opus
 Time: 227.02
@@ -963,8 +964,8 @@ Title: Andaron Saga OST: 104 Land of Sorcery (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251984
-added: 1779251984
+mtime: 1783114495
+added: 1783114495
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/eGAr8aElxI0.opus
 Time: 116.98
@@ -972,8 +973,8 @@ Title: Andaron Saga OST: 105 Shifting Sand (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779251993
-added: 1779251993
+mtime: 1783114515
+added: 1783114515
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/jkko0pwj_J0.opus
 Time: 82.06
@@ -981,8 +982,8 @@ Title: Andaron Saga OST: 106 Styxian Clash (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252019
-added: 1779252019
+mtime: 1783114603
+added: 1783114603
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Ir6x1vCbh4I.opus
 Time: 66.28
@@ -990,8 +991,8 @@ Title: Andaron Saga OST: 107 Sorcerer's Dance (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252025
-added: 1779252025
+mtime: 1783115674
+added: 1783115674
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ZMUWWM55xyQ.opus
 Time: 52.44
@@ -999,8 +1000,8 @@ Title: Andaron Saga OST: 108 Purple Veil (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252030
-added: 1779252030
+mtime: 1783115697
+added: 1783115697
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/wyK_CTRo1vw.opus
 Time: 44.28
@@ -1008,8 +1009,8 @@ Title: Andaron Saga OST: 109 Don't Dread on Me (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252035
-added: 1779252035
+mtime: 1783117942
+added: 1783117942
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/h3LZb-GNctA.opus
 Time: 161.48
@@ -1017,8 +1018,8 @@ Title: Andaron Saga OST: 110 Slithering Snakes (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252041
-added: 1779252041
+mtime: 1783117966
+added: 1783117966
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/MNznKvjMIYM.opus
 Time: 105.22
@@ -1026,8 +1027,8 @@ Title: Andaron Saga OST: 111 Beautiful Wasteland (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252047
-added: 1779252047
+mtime: 1783117988
+added: 1783117988
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/SB_zYmei_3Q.opus
 Time: 147.1
@@ -1035,8 +1036,8 @@ Title: Andaron Saga OST: 112 Sand Tombs of Horror (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252052
-added: 1779252052
+mtime: 1783118007
+added: 1783118007
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/o2Wy9gncrR8.opus
 Time: 222.06
@@ -1044,8 +1045,8 @@ Title: Andaron Saga OST: 113 Lich's Requiem (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252059
-added: 1779252059
+mtime: 1783118031
+added: 1783118031
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/l6ecDB15hw8.opus
 Time: 69.10000000000001
@@ -1053,8 +1054,8 @@ Title: Andaron Saga OST: 114 Ahmed (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252065
-added: 1779252065
+mtime: 1783118052
+added: 1783118052
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/ckqKsQQVkDU.opus
 Time: 251.98000000000002
@@ -1062,8 +1063,8 @@ Title: Andaron Saga OST: 115 On the Path to Valor (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252072
-added: 1779252072
+mtime: 1783118071
+added: 1783118071
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/xU8Ijg8v9JQ.opus
 Time: 173.28
@@ -1071,8 +1072,8 @@ Title: Andaron Saga OST: 116 Return of the Heroes (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252078
-added: 1779252078
+mtime: 1783118089
+added: 1783118089
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/6CZEp1kym8k.opus
 Time: 167.18
@@ -1080,8 +1081,8 @@ Title: Andaron Saga OST: 117 Flame of Ambition (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252084
-added: 1779252084
+mtime: 1783118107
+added: 1783118107
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/iQpHzjKhBWE.opus
 Time: 62.160000000000004
@@ -1089,8 +1090,8 @@ Title: Andaron Saga OST: 118 Determined to Conquer (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252089
-added: 1779252089
+mtime: 1783118124
+added: 1783118124
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/_EPjs35lObo.opus
 Time: 60.14
@@ -1098,8 +1099,8 @@ Title: Andaron Saga OST: 119 Collision of Destinies (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252093
-added: 1779252093
+mtime: 1783118139
+added: 1783118139
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/QzlzJoNiSnE.opus
 Time: 91.58
@@ -1107,8 +1108,8 @@ Title: Andaron Saga OST: 120 Firefight (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252098
-added: 1779252098
+mtime: 1783118154
+added: 1783118154
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/RTVsUC64jnA.opus
 Time: 168.86
@@ -1116,8 +1117,8 @@ Title: Andaron Saga OST: 121 Flame of Corruption (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252105
-added: 1779252105
+mtime: 1783118217
+added: 1783118217
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/pdxLMQV_SaY.opus
 Time: 195.82
@@ -1125,8 +1126,8 @@ Title: Andaron Saga OST: 122 Monsters from Flames (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252112
-added: 1779252112
+mtime: 1783118236
+added: 1783118236
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/w9DKwYV4jCg.opus
 Time: 247.32
@@ -1134,8 +1135,8 @@ Title: Andaron Saga OST: 123 Winds of Change (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252119
-added: 1779252119
+mtime: 1783118252
+added: 1783118252
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/fVOwFjJPeAQ.opus
 Time: 89.14
@@ -1143,8 +1144,8 @@ Title: Andaron Saga OST: 124 Legendary Showdown (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252124
-added: 1779252124
+mtime: 1783118273
+added: 1783118273
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/q6Blu9l2luM.opus
 Time: 141.72
@@ -1152,8 +1153,8 @@ Title: Andaron Saga OST: 125 False Valor (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252130
-added: 1779252130
+mtime: 1783118300
+added: 1783118300
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/vq0T_vaTsTg.opus
 Time: 272.14
@@ -1161,8 +1162,8 @@ Title: Andaron Saga OST: 126 The Siege of Holtmeier (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252290
-added: 1779252290
+mtime: 1783118322
+added: 1783118322
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/-g-knQpSHy0.opus
 Time: 114.06
@@ -1170,8 +1171,8 @@ Title: Andaron Saga OST: 127 Looming Gaze of the Deceiver (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252140
-added: 1779252140
+mtime: 1783118389
+added: 1783118389
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/hyrrHSJtWaE.opus
 Time: 67.64
@@ -1179,8 +1180,8 @@ Title: Andaron Saga OST: 128 Bound by Oath (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252146
-added: 1779252146
+mtime: 1783118402
+added: 1783118402
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/f2-G0lbRRn0.opus
 Time: 147.02
@@ -1188,8 +1189,8 @@ Title: Andaron Saga OST: 129 Tide of Steel (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252152
-added: 1779252152
+mtime: 1783118421
+added: 1783118421
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/XC8By31oJrQ.opus
 Time: 75.32000000000001
@@ -1197,8 +1198,8 @@ Title: Andaron Saga OST: 130 Wall of Steel (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252157
-added: 1779252157
+mtime: 1783118463
+added: 1783118463
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Qr8yhjVNgrs.opus
 Time: 188.52
@@ -1206,8 +1207,8 @@ Title: Andaron Saga OST: 131 Lightbringer's Clash (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252165
-added: 1779252165
+mtime: 1783118478
+added: 1783118478
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/dDmkehKtMVs.opus
 Time: 467.2
@@ -1215,8 +1216,8 @@ Title: Andaron Saga OST: 132 Desire and Truth (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252175
-added: 1779252175
+mtime: 1783118503
+added: 1783118503
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/AnbkomF0qUs.opus
 Time: 349.6
@@ -1224,8 +1225,8 @@ Title: Andaron Saga OST: 133 The Shrine (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252183
-added: 1779252183
+mtime: 1783118527
+added: 1783118527
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/FXn8qF59hXM.opus
 Time: 86.4
@@ -1233,8 +1234,8 @@ Title: Andaron Saga OST: 134 Puppetmaster (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252188
-added: 1779252188
+mtime: 1783118540
+added: 1783118540
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/5KoFepZJOkQ.opus
 Time: 276.8
@@ -1242,8 +1243,8 @@ Title: Andaron Saga OST: 135 Lightbringer's Requiem (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252196
-added: 1779252196
+mtime: 1783118563
+added: 1783118563
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/Ky4sssdJfD8.opus
 Time: 227.18
@@ -1251,8 +1252,8 @@ Title: Andaron Saga OST: 136 Baudimon Andaron Saga (Treatstar & Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252203
-added: 1779252203
+mtime: 1783118578
+added: 1783118578
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/XZeK_j2bI2Y.opus
 Time: 66.06
@@ -1260,8 +1261,8 @@ Title: Andaron Saga OST: 137 A Life Lost (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252208
-added: 1779252208
+mtime: 1783118593
+added: 1783118593
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/9h08g9_YcEY.opus
 Time: 27.36
@@ -1269,8 +1270,8 @@ Title: Andaron Saga OST: 138 Final Rest (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252214
-added: 1779252214
+mtime: 1783118608
+added: 1783118608
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/7ZwA1JN7Bdc.opus
 Time: 60.2
@@ -1278,8 +1279,8 @@ Title: Andaron Saga OST: 139 To a Higher Place (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252219
-added: 1779252219
+mtime: 1783118626
+added: 1783118626
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/1GKxf-4dF-g.opus
 Time: 150.48
@@ -1287,8 +1288,8 @@ Title: Andaron Saga OST (Bonus Track): 140 Baudimon's Theme (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252225
-added: 1779252225
+mtime: 1783118643
+added: 1783118643
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/QOBQveeJgc8.opus
 Time: 164.98
@@ -1296,8 +1297,8 @@ Title: Andaron Saga OST (Bonus Track): 141 Miracle's Don't Come Twice (Tambo)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252231
-added: 1779252231
+mtime: 1783118661
+added: 1783118661
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/HeZSNuf_6kA.opus
 Time: 177.06
@@ -1305,8 +1306,8 @@ Title: Andaron Saga OST (Bonus Track): 142 Epilogue (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252237
-added: 1779252237
+mtime: 1783118675
+added: 1783118675
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/FXIhISu2QGE.opus
 Time: 202.14000000000001
@@ -1314,8 +1315,8 @@ Title: Andaron Saga OST (Bonus Track): 143 War Zone (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252243
-added: 1779252243
+mtime: 1783118700
+added: 1783118700
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/iGfiWYp0Pco.opus
 Time: 55.82
@@ -1323,8 +1324,8 @@ Title: Andaron Saga OST (Bonus Track): 144 The Final Stride (Treatstar)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252249
-added: 1779252249
+mtime: 1783118727
+added: 1783118727
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/xElw8ZvzSU4.opus
 Time: 75.10000000000001
@@ -1332,8 +1333,8 @@ Title: Andaron Saga OST (Bonus Track): 145 Threat from the Underworld (Treatstar
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252253
-added: 1779252253
+mtime: 1783118743
+added: 1783118743
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/SAKvVOzI0FM.opus
 Time: 82.36
@@ -1341,8 +1342,8 @@ Title: Andaron Saga OST (Bonus Track): 146 Death Match (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252259
-added: 1779252259
+mtime: 1783118757
+added: 1783118757
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/HoqupYCRs0o.opus
 Time: 355.82
@@ -1350,8 +1351,8 @@ Title: Andaron Saga OST (Bonus Track): 147 The Wedding (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252269
-added: 1779252269
+mtime: 1783118771
+added: 1783118771
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/1ky5o0EgQ50.opus
 Time: 300.32
@@ -1359,35 +1360,179 @@ Title: Andaron Saga OST (Bonus Track): 148 Silver Will (Arrangement)
 Date: 20230823
 Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779252277
-added: 1779252277
+mtime: 1783118790
+added: 1783118790
 song_end
-song_begin: /home/gojira_96/.cache/rmpc/youtube/7oMXhfjl9mo.opus
-Time: 1508.38
-Title: Rebellion Saga - Purge at Holtimer OST Extended
-Date: 20250318
-Artist: Akela Reborn
+song_begin: /home/gojira_96/.cache/rmpc/youtube/LGrMH0xGTyw.opus
+Time: 287.32
+Title: Andaron Saga OST (Bonus Track): 149 Broken Vows (Treatstar)
+Date: 20230823
+Artist: Treatstar
 Genre: People & Blogs
-mtime: 1779261165
-added: 1779261165
+mtime: 1783118815
+added: 1783118815
 song_end
-song_begin: /home/gojira_96/.cache/rmpc/youtube/j69CeyuNJjQ.opus
-Time: 726.04
-Title: Fire Emblem: Binding Blade OST - Beneath A New Light (Extended)
-Date: 20160111
-Artist: Eponine V
+song_begin: /home/gojira_96/.cache/rmpc/youtube/JbeJniouMJ4.opus
+Time: 337.48
+Title: Andaron Saga OST (Remastered): 88 Sailing in Search of Hope
+Date: 20230823
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783113264
+added: 1783113264
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/ltLSN3c5RJg.opus
+Time: 647.32
+Title: Andaron Saga OST (Remastered): 89 Retribution
+Date: 20231225
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783113268
+added: 1783113268
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/eAH2BoqQGZM.opus
+Time: 534.5600000000001
+Title: Andaron Saga OST (Remastered): 100 Dragonhand
+Date: 20240129
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783113274
+added: 1783113274
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/hDpYEqOJY0A.opus
+Time: 340.28000000000003
+Title: Andaron Saga OST (Remastered): 104 Land of Sorcery
+Date: 20240129
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783113279
+added: 1783113279
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/g_zEHAaFTM0.opus
+Time: 272
+Title: Andaron Saga OST (Remastered): 126 The Siege of Holtmeier
+Date: 20231123
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783113283
+added: 1783113283
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/mj7VCBgJUtA.opus
+Time: 204.28
+Title: Order of the Crimson Arm OST (Remake): 01 Harvest Dance
+Date: 20230918
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783118848
+added: 1783118848
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/G7i-VkudVRg.opus
+Time: 667.22
+Title: GBA Arrangements: Fort Condor (Final Fantasy VII)
+Date: 20240707
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783118866
+added: 1783118866
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/hJBiIq7nqMM.opus
+Time: 550.92
+Title: GBA Arrangements: Cosmo Canyon (Final Fantasy VII)
+Date: 20240713
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783118878
+added: 1783118878
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/z0kH1cEHhtU.opus
+Time: 341.40000000000003
+Title: GBA Arrangements: Space Land (Mario Party 2)
+Date: 20240711
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783118893
+added: 1783118893
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/pHjTlFYCbbs.opus
+Time: 579.54
+Title: GBA Arrangements: Harvest Dance (Tactics Ogre)
+Date: 20240719
+Artist: Treatstar
+Genre: People & Blogs
+mtime: 1783118910
+added: 1783118910
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/WMEnciKp5Hc.opus
+Time: 602.6
+Title: route 209 day EXTENDED pokemon d p pt.wmv
+Date: 20100201
+Artist: Slvrdcky
+Genre: Gaming
+mtime: 1783119338
+added: 1783119338
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/SIvNsZnYsxQ.opus
+Time: 1800.02
+Title: Route 209 (Night) Pokémon Diamond & Pearl Music Extended
+Date: 20200421
+Artist: EphyX
+Genre: People & Blogs
+mtime: 1783119267
+added: 1783119267
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/HLsRjcJUNWs.opus
+Time: 862.4200000000001
+Title: OST - Pokémon Legends Arceus - Route 209
+Date: 20220121
+Artist: Mastered Realm
 Genre: Music
-mtime: 1779256528
-added: 1779256528
+mtime: 1783119355
+added: 1783119355
 song_end
-song_begin: /home/gojira_96/.cache/rmpc/youtube/-P9RrlVE0lA.opus
-Time: 1460.06
-Title: Advance Wars Black Hole Rising Colin's Theme (Extended)
-Date: 20130422
+song_begin: /home/gojira_96/.cache/rmpc/youtube/k5V1iNgw_-o.opus
+Time: 7196.34
+Title: Battle vs Gym Leader ⚡ Pokémon Ruby/Sapphire/Emerald (OST)
+Date: 20240910
+Artist: MUSICPL4YS - Extended Game Soundtracks
+Genre: Gaming
+mtime: 1783119760
+added: 1783119760
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/ckpItySvkwQ.opus
+Time: 3600.02
+Title: Pokémon Ruby/Sapphire/Emerald OST- Rival Battle EXTENDED | HD |
+Date: 20120827
+Artist: dumdumlaw
+Genre: Gaming
+mtime: 1783119850
+added: 1783119850
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/jLSAgVMaPzk.opus
+Time: 1799.14
+Title: Route 47   Pokémon Heart Gold & Soul Silver Music Extended Music OST
+Date: 20220411
+Artist: StormMusicEx
+Genre: Music
+mtime: 1783120023
+added: 1783120023
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/qD23t5eOcJI.opus
+Time: 914.98
+Title: Route 47 + GB Sounds ~ Mashup (Pokémon HeartGold & SoulSilver) [EXTENDED]
+Date: 20190710
+Artist: David Mismo
+Genre: Gaming
+mtime: 1783120071
+added: 1783120071
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/S2A8FP0jbiA.opus
+Time: 1400.08
+Title: Advance Wars Black Hole Rising Hawke's Theme (Extended)
+Date: 20130415
 Artist: SuperPaltos23
 Genre: Music
-mtime: 1779297010
-added: 1779297010
+mtime: 1783119113
+added: 1783119113
 song_end
 song_begin: /home/gojira_96/.cache/rmpc/youtube/9LMQrSKZu6c.opus
 Time: 1409.1200000000001
@@ -1395,25 +1540,70 @@ Title: Advance Wars Black Hole Rising Jess' Theme (Extended)
 Date: 20130416
 Artist: SuperPaltos23
 Genre: Music
-mtime: 1779377829
-added: 1779377829
+mtime: 1783119453
+added: 1783119453
 song_end
-song_begin: /home/gojira_96/.cache/rmpc/youtube/oAlooVYgPFQ.opus
-Time: 1423.38
-Title: Advance Wars Black Hole Rising - Green Earth Theme (Extended)
-Date: 20140223
+song_begin: /home/gojira_96/.cache/rmpc/youtube/-P9RrlVE0lA.opus
+Time: 1460.06
+Title: Advance Wars Black Hole Rising Colin's Theme (Extended)
+Date: 20130422
 Artist: SuperPaltos23
 Genre: Music
-mtime: 1779428216
-added: 1779428216
+mtime: 1783119514
+added: 1783119514
 song_end
-song_begin: /home/gojira_96/.cache/rmpc/youtube/t1zps1uyz5M.opus
-Time: 283.82
-Title: Meteorion - LM.C - Romaji Lyrics
-Date: 20120902
-Artist: Mariari_
+song_begin: /home/gojira_96/.cache/rmpc/youtube/v8vcSnRenX8.opus
+Time: 1400.88
+Title: Advance Wars Black Hole Rising Drake's Theme (Extended)
+Date: 20130509
+Artist: SuperPaltos23
 Genre: Music
-mtime: 1779255835
-added: 1779255835
+mtime: 1783119622
+added: 1783119622
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/ViXd_-b-iAU.m4a
+Time: 1423.105
+Artist: SuperPaltos23
+Title: Advance Wars Black Hole Rising - Sami's Theme (Extended)
+Genre: Music
+Date: 20130428
+mtime: 1783119640
+added: 1783119640
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/4SSDJUr7Drw.opus
+Time: 1457.08
+Title: Advance Wars Dual Strike - Hawke's Theme (Extended)
+Date: 20160213
+Artist: SuperPaltos23
+Genre: Entertainment
+mtime: 1783119560
+added: 1783119560
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/VKQf9MPnIp8.opus
+Time: 3698.76
+Title: Sasha's Theme (Extended) - AW Dual Strike
+Date: 20210923
+Artist: SuperPaltos23
+Genre: Music
+mtime: 1783119425
+added: 1783119425
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/uhEDNXhIbMY.opus
+Time: 1412.06
+Title: Advance Wars Dual Strike - Jess' Theme (Extended)
+Date: 20160213
+Artist: SuperPaltos23
+Genre: Entertainment
+mtime: 1783119471
+added: 1783119471
+song_end
+song_begin: /home/gojira_96/.cache/rmpc/youtube/Eof8PesukfI.opus
+Time: 1454.8600000000001
+Title: Colin's Theme (Extended) - AW Dual Strike
+Date: 20160219
+Artist: SuperPaltos23
+Genre: Entertainment
+mtime: 1783119534
+added: 1783119534
 song_end
 playlist_end
