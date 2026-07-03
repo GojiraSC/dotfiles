@@ -12,7 +12,8 @@
 	"custom/arch",
 	"custom/clock",
 	"custom/date",
-	"custom/vpn"
+	"custom/vpn",
+   "custom/cava"
     ],
     "custom/arch": {
 	"format": " ",
@@ -36,7 +37,12 @@
 	"format": "{}",
 	"tooltip": true,
 	"tooltip-format": "VPN Status"
-},
+    },
+    "custom/cava": {
+       "exec": "~/.config/waybar/scripts/cava.sh",
+       "format": "{}",
+       "tooltip": false
+    },
 
     "modules-center": [
 	"hyprland/workspaces"

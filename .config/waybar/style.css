@@ -65,6 +65,13 @@
     font-size: 14px;
     }
 
+  #custom-cava {
+     color: #7aa2f7;
+     font-weight: bold;
+     padding: 0 8px;
+     font-size: 14px;
+  }
+
   #custom-spotify {
     background-color: rgba(152, 151, 26, 0.2);
     border: 2px solid #98971a;
