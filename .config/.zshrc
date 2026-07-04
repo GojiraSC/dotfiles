@@ -7,7 +7,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
-pokeshell -s tyranitar 2>/dev/null
+pokeshell -s garchomp 2>/dev/null
 eval "$(starship init zsh)"
 
 export EDITOR=nvim
@@ -24,9 +24,6 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
     source "$KITTY_INSTALLATION_DIR/shell-integration/zsh/kitty.zsh"
 fi
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 bindkey "^[[3~" delete-char
 
 autoload -Uz compinit
@@ -38,13 +35,10 @@ fi
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'  # case insensitive
 
-export PATH=~/bin:$PATH
 
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
-export PATH="$PATH:/usr/lib/rstudio"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
