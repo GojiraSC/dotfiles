@@ -255,24 +255,21 @@ hl.bind(mainMod .. " + semicolon", hl.dsp.exec_cmd("desmume"))            -- DS 
 hl.bind(mainMod .. " + backslash", hl.dsp.exec_cmd("slack"))
 hl.bind(mainMod .. " + bracketleft", hl.dsp.exec_cmd("flips"))
 hl.bind(mainMod .. " + bracketright", hl.dsp.exec_cmd("/home/gojira_96/.local/bin/resolve-launch"))      -- Davinci Resolve
-hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("pavucontrol"))            -- Volume Management
+hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseudo-gui"))            -- mp4 player
 
 
 local ALT = "ALT"
-hl.bind(ALT .. " + V",         hl.dsp.exec_cmd("kitty cava"))           -- Audio Visualizer
+hl.bind(ALT .. " + Insert", hl.dsp.exec_cmd("kitty --class cava-float -o background_opacity=0.6 -e cava"))           -- Audio Visualizer
 hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty btop"))           -- Terminal-based Resource Management
-hl.bind(ALT .. " + Pause",     hl.dsp.exec_cmd("kitty cmatrix"))
-hl.bind(ALT .. " + Insert",    hl.dsp.exec_cmd("kitty peaclock"))        -- Clock
-hl.bind(ALT .. " + Page_Up",   hl.dsp.exec_cmd("kitty pipes-rs"))
+hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win cmatrix -a -b -u 2 -C yellow")) -- Terminal matrix
 hl.bind(ALT .. " + E",         hl.dsp.exec_cmd("kitty vim"))            -- Backup Editor
-hl.bind(ALT .. " + C",         hl.dsp.exec_cmd("kitty calcurse"))       -- Calendar
+hl.bind(ALT .. " + Page_Up",         hl.dsp.exec_cmd("kitty --class calcurse-float -o background_opacity=0.8 -e calcurse"))       -- Calendar
 hl.bind(ALT .. " + L",         hl.dsp.exec_cmd("kitty lazygit"))
-hl.bind(ALT .. " + T",         hl.dsp.exec_cmd("kitty tmux"))
-hl.bind(ALT .. " + equal",     hl.dsp.exec_cmd("kitty calc"))           -- Calculator
-hl.bind(ALT .. " + P", hl.dsp.exec_cmd("kitty ncspot"))                 -- TUI Spotify
-hl.bind(ALT .. " + R", hl.dsp.exec_cmd("kitty rmpc"))                   -- TUI Music Player
-hl.bind(ALT .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseudo-gui"))     -- mp4 player
-
+hl.bind(ALT .. " + equal",     hl.dsp.exec_cmd("kitty --class calc-float -o background_opacity=0.9 -e calc"))           -- Calculator
+hl.bind(ALT .. " + P", hl.dsp.exec_cmd("kitty --class ncspot-float -o background_opacity=0.9 -e ncspot"))                 -- TUI Spotify
+hl.bind(ALT .. " + R", hl.dsp.exec_cmd("kitty --class rmpc-float -e rmpc"))                   -- TUI Music Player
+hl.bind(ALT .. " + Minus", hl.dsp.exec_cmd("kitty --class wiremix-float -o background_opacity=0.9 -e wiremix"))     -- TUI Volume Management
+hl.bind(ALT .. " + Home", hl.dsp.exec_cmd("kitty --class nmtui-float -e nmtui"))                -- NetworkManager TUI
 
 -- Neovim env
 local home = os.getenv("HOME")
@@ -380,9 +377,73 @@ hl.window_rule({
 
 -- nmtui float
 hl.window_rule({
-    name  = "nmtui-float",
-    match = { class = "floating" },
-    float = true,
-    size  = "800 600",
-    center = true,
+  name = "nmtui-float",
+  match = { class = "^(nmtui-float)$" },
+  float = true,
+  size = "800 600",
+  center = true,
+})
+
+-- cmatrix float
+hl.window_rule({
+  match = { class = "^(cmatrix-win)$" },
+  float = true,
+  size = "800 500",
+  center = true,
+  opacity = 0.85,
+  border_size = 0,
+})
+
+-- cava float
+hl.window_rule({
+  name = "cava-float",
+  match = { class = "^(cava-float)$" },
+  float = true,
+  size = "800 300",
+  center = true,
+})
+
+-- wiremix float
+hl.window_rule({
+  name = "wiremix-float",
+  match = { class = "^(wiremix-float)$" },
+  float = true,
+  size = "800 600",
+  center = true,
+})
+
+-- calc float
+hl.window_rule({
+   name = "calc-float",
+   match = { class = "^(calc-float)$" },
+   float = true,
+   size = "800 600",
+   center = true,
+})
+
+-- calcurse float
+hl.window_rule({
+   name = "calcurse-float",
+   match = { class = "^(calcurse-float)$" },
+   float = true,
+   size = "1000 900",
+   center = true,
+})
+
+-- rmpc float
+hl.window_rule({
+   name = "rmpc-float",
+   match = { class = "^(rmpc-float)$" },
+   float = true,
+   size = "1200 800",
+   center = true,
+})
+
+-- ncspot float
+hl.window_rule({
+   name = "ncspot-float",
+   match = { class = "^(ncspot-float)$" },
+   float = true,
+   size = "1100 1100",
+   center = true,
 })
