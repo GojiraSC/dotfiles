@@ -176,11 +176,25 @@
                     direction: Horizontal,
                     panes: [
                         (
-                            size: "65%",
-                            borders: "ALL",
-                            border_symbols: Rounded,
-                            pane: Pane(Queue)
+                           size: "65%",
+                           pane: Split(
+                           direction: Vertical,
+                           panes: [
+                        (
+                           size: "3",
+                           borders: "ALL",
+                           border_symbols: Rounded,
+                           pane: Pane(QueueHeader()),
                         ),
+            (
+                size: "100%",
+                borders: "LEFT | RIGHT | BOTTOM",
+                border_symbols: Rounded,
+                pane: Pane(Queue),
+            ),
+        ],
+    ),
+),
                         (
                             size: "35%",
                             borders: "ALL",

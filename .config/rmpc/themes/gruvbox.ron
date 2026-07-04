@@ -103,14 +103,13 @@ song_table_format: [
     default: (kind: Text("Unknown"))
     ),
     label_prop: (kind: Text("Title")),
-    width: "35%",
+    width: "65%",
 ),
 (
-    prop: (kind: Property(Album), style: (fg: "#89b482"),
-    default: (kind: Text("Unknown Album"), style: (fg: "#89b482"))
-    ),
+    prop: (kind: Property(Album), default: (kind: Text("Unknown"))),
     label_prop: (kind: Text("Album")),
-    width: "30%",
+    width: "25%",
+    alignment: Right,
 ),
 (
     prop: (kind: Property(Duration),
