@@ -1,0 +1,51 @@
+# ~/.config/mako/config
+
+# Layout / position
+anchor=top-right
+margin=10
+padding=10
+width=350
+height=110
+border-size=2
+border-radius=8
+
+# Gruvbox Dark palette
+background-color=#282828
+text-color=#ebdbb2
+border-color=#458588
+progress-color=over #3c3836
+
+# Font (match your DepartureMono Nerd Font setup)
+font=DepartureMono Nerd Font 11
+
+# Behavior
+default-timeout=5000
+ignore-timeout=1
+max-visible=5
+sort=-time
+layer=overlay
+
+# Icons
+icons=1
+max-icon-size=48
+
+# Grouping
+group-by=app-name
+
+[urgency=low]
+border-color=#98971a
+default-timeout=3000
+
+[urgency=critical]
+border-color=#cc241d
+default-timeout=0
+
+[app-name=ncspot]
+border-color=#ff5a4e
+default-timeout=3000
+
+[app-name=rmpc]
+border-color=#ce7e00
+default-timeout=3000
+
+actions=1
