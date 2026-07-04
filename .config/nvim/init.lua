@@ -14,7 +14,7 @@ vim.o.titlestring = "nvim %t"
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
-    vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#fabd2f" })
+     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#d9ead3" })
   end,
 })
 
@@ -48,6 +48,8 @@ vim.keymap.set('n', '<F8>', function() require('dap').step_out() end, { desc = '
 vim.keymap.set("n", "<F9>", function() require('dap').toggle_breakpoint() end, { desc = "DAP: Toggle Breakpoint" })
 vim.keymap.set('n', '<Leader>db', function() require('dap').toggle_breakpoint() end, { desc = 'DAP: Toggle Breakpoint' })
 vim.keymap.set('n', '<Leader>du', function() require('dapui').toggle() end, { desc = 'DAP: Toggle UI' })
+vim.keymap.set("n", "<leader>dv", "<cmd>DapViewOpen<cr>")
+vim.keymap.set("n", "<leader>dx", "<cmd>DapViewClose<cr>")
 
 
 
@@ -254,6 +256,9 @@ vim.pack.add({
 
   -- DAP
   "https://github.com/mfussenegger/nvim-dap",
+
+  -- DAP View
+  { src = "https://github.com/igorlfs/nvim-dap-view", version = vim.version.range("1.*")  },
 
   -- LSP
   "https://github.com/neovim/nvim-lspconfig",
@@ -470,6 +475,7 @@ _G.find_project_files = function()
       "~/.config",
       "~/org",
       "~/bin",
+      "~",
     },
     hidden = true,
   })
@@ -485,7 +491,7 @@ require("bufferline").setup({
     show_close_icon = false,
     separator_style = "slant",
     always_show_bufferline = true,
-    offsets = {
+        offsets = {
       {
         filetype = "NvimTree",
         text = "File Explorer",
@@ -494,6 +500,19 @@ require("bufferline").setup({
       },
     },
   },
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "alpha",
+  callback = function()
+    vim.opt.showtabline = 0
+    vim.api.nvim_create_autocmd("BufUnload", {
+      buffer = 0,
+      callback = function()
+        vim.opt.showtabline = 2
+      end,
+    })
+  end,
 })
 
 
