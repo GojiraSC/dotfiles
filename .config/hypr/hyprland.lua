@@ -261,7 +261,7 @@ hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseu
 local ALT = "ALT"
 hl.bind(ALT .. " + Insert", hl.dsp.exec_cmd("kitty --class cava-float -o background_opacity=0.6 -e cava"))           -- Audio Visualizer
 hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty btop"))           -- Terminal-based Resource Management
-hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win cmatrix -a -b -u 2 -C yellow")) -- Terminal matrix
+hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win -o -e cmatrix -a -b -u 3 -C yellow")) -- Terminal matrix
 hl.bind(ALT .. " + E",         hl.dsp.exec_cmd("kitty vim"))            -- Backup Editor
 hl.bind(ALT .. " + Page_Up",         hl.dsp.exec_cmd("kitty --class calcurse-float -o background_opacity=0.8 -e calcurse"))       -- Calendar
 hl.bind(ALT .. " + L",         hl.dsp.exec_cmd("kitty lazygit"))
@@ -435,7 +435,7 @@ hl.window_rule({
    name = "rmpc-float",
    match = { class = "^(rmpc-float)$" },
    float = true,
-   size = "1200 800",
+   size = "1600 900",
    center = true,
 })
 
@@ -444,6 +444,6 @@ hl.window_rule({
    name = "ncspot-float",
    match = { class = "^(ncspot-float)$" },
    float = true,
-   size = "1100 1100",
+   size = "1500 900",
    center = true,
 })
