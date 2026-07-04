@@ -259,6 +259,7 @@ hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseu
 
 
 local ALT = "ALT"
+hl.bind(ALT .. " + grave", hl.dsp.exec_cmd("kitty --class scratch-term -o background_opacity=0.2")) -- quick drop terminal
 hl.bind(ALT .. " + Insert", hl.dsp.exec_cmd("kitty --class cava-float -o background_opacity=0.6 -e cava"))           -- Audio Visualizer
 hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty btop"))           -- Terminal-based Resource Management
 hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win -o -e cmatrix -a -b -u 3 -C yellow")) -- Terminal matrix
@@ -446,4 +447,13 @@ hl.window_rule({
    float = true,
    size = "1500 900",
    center = true,
+})
+
+-- quick drop terminal
+hl.window_rule({
+  name = "scratch-term",
+  match = { class = "^(scratch-term)$" },
+  float = true,
+  size = "1000 900",
+  center = true,
 })
