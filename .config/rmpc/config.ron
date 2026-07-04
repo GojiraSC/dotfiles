@@ -171,12 +171,12 @@
         direction: Vertical,
         panes: [
             (
-                size: "100%",
+                size: "95%",
                 pane: Split(
                     direction: Horizontal,
                     panes: [
                         (
-                           size: "65%",
+                           size: "80%",
                            pane: Split(
                            direction: Vertical,
                            panes: [
@@ -196,7 +196,7 @@
     ),
 ),
                         (
-                            size: "35%",
+                            size: "20%",
                             borders: "ALL",
                             border_symbols: Rounded,
                             pane: Pane(AlbumArt)
