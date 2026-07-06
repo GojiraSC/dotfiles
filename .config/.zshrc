@@ -18,6 +18,8 @@ alias clang='clang -std=c23'
 alias g++='g++ -std=c++20'
 alias clang++='clang++ -std=c++20'
 
+echo 'alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"' >> ~/.zshrc
+
 
 if test -n "$KITTY_INSTALLATION_DIR"; then
     export KITTY_SHELL_INTEGRATION="enabled"
@@ -44,3 +46,35 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 precmd() { echo; }
+alias nv="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nv="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nv="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
+alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
