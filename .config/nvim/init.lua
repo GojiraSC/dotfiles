@@ -14,7 +14,7 @@ vim.o.titlestring = "nvim %t"
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
-     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#d9ead3" })
+     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#cfe2f3" })
   end,
 })
 
@@ -25,6 +25,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spelllang = "en_us"
   end,
 })
+
 
 
 -- Basic Keymaps
@@ -41,6 +42,7 @@ vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode" })
 
 
 -- DAP Keymaps
+---@diagnostic disable: undefined-field
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end, { desc = 'DAP: Start/Continue' })
 vim.keymap.set('n', '<F6>', function() require('dap').step_over() end, { desc = 'DAP: Step Over' })
 vim.keymap.set('n', '<F7>', function() require('dap').step_into() end, { desc = 'DAP: Step Into' })
@@ -54,7 +56,11 @@ vim.keymap.set("n", "<leader>dx", "<cmd>DapViewClose<cr>")
 
 
 -- Lazygit Keymap
-vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+vim.keymap.set("n", "<leader>ll", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+
+
+-- Neogit Keymap
+vim.keymap.set("n", "<leader>gg", function() require("neogit").open() end, { desc = "Neogit" })
 
 
 -- Bufferline keymaps
@@ -231,6 +237,9 @@ vim.pack.add({
   -- Treesitter
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 
+  -- Neogit
+  { src = "https://github.com/NeogitOrg/neogit" },
+
   -- Session manager
   "https://github.com/nvim-lua/plenary.nvim",
   "https://github.com/Shatur/neovim-session-manager",
@@ -285,6 +294,9 @@ vim.pack.add({
   "https://github.com/saadparwaiz1/cmp_luasnip",
   "https://github.com/rafamadriz/friendly-snippets",
 })
+
+-- Neogit Setup
+require("neogit").setup()
 
 
 -- Line Justice
@@ -463,19 +475,10 @@ require("gitsigns").setup({
 _G.find_project_files = function()
   require("telescope.builtin").find_files({
     search_dirs = {
-      "~/cprojects",
-      "~/rustprojects",
-      "~/adaprojects",
-      "~/asmprojects",
-      "~/cpp-projects",
-      "~/luaprojects",
-      "~/exercism",
       "~/dotfiles",
       "~/Documents",
       "~/.config",
-      "~/org",
-      "~/bin",
-      "~",
+      "~/Practice",
     },
     hidden = true,
   })
