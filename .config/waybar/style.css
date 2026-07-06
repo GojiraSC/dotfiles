@@ -51,6 +51,7 @@
     font-weight: bold;
     font-size: 14px;
     color: #fabd2f;
+    margin: 0 0 0 200px;
     }
 
   #custom-date {
@@ -112,8 +113,15 @@
   #temperature,
   #custom-power {
     padding: 6px 12px;
-    margin: 6px 6px;
+    margin: 6px 20px 6px 6px;
     background-color: rgba(30, 45, 61, 0.7);
     border: 2px solid #7ab8d4;
     border-radius: 2px;
     }
+#custom-clock {
+  padding: 6px 12px;
+  margin: 6px 6px 6px 20px;
+  background-color: rgba(30, 45, 61, 0.7);
+  border: 2px solid #7ab8d4;
+  border-radius: 2px;
+}
