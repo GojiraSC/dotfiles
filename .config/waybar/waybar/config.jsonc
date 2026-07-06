@@ -5,15 +5,20 @@
      "position": "top", // Waybar position (top|bottom|left|right)
      "margin-top": 12,
      "margin-bottom": -8,
-     "height": 49,
+     "height": 49, // Waybar height (to be removed for auto height)
      "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+	"custom/arch",
 	"custom/clock",
 	"custom/date",
 	"custom/vpn",
    "custom/cava"
     ],
+    "custom/arch": {
+	"format": " ",
+	"tooltip": false
+    },
     "custom/clock": {
 	"exec": "date '+%I:%M %p'",
 	"interval": 60,

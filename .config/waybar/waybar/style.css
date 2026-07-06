@@ -47,7 +47,13 @@
     }
 
 
-    #custom-clock {
+  #custom-arch {
+    font-size: 18px;
+    padding: 0 15px;  /* Add more padding since it's bigger */
+    color: #1a8de4;
+    }
+
+  #custom-clock {
     font-weight: bold;
     font-size: 14px;
     color: #fabd2f;
@@ -59,7 +65,7 @@
     font-size: 14px;
     }
 
-    #custom-cava {
+  #custom-cava {
      color: #7aa2f7;
      font-weight: bold;
      padding: 0 8px;
