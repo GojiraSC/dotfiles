@@ -40,7 +40,7 @@ hl.on("hyprland.start", function()
    hl.exec_cmd("systemctl --user start hyprland-session.target")
    hl.exec_cmd("waybar & librewolf")
    hl.exec_cmd("awww-daemon")
-   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-5y5537.png")
+   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-o3x3zp.jpg")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("mako")
@@ -238,7 +238,7 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("librewolf"))                  -- Main Browser
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("qutebrowser"))        -- Backup Browser
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("libreoffice"))                -- Word,Excel,PowerPoint Processor
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("kitty nvim"))                 -- Terminal-based Editor
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("kitty --class nvim-solid -o background_opacity=1.0 -e nvim"))                 -- Terminal-based Editor
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("kicad"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("qview"))                      -- Image Viewer
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obs"))
