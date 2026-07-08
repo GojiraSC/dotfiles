@@ -14,7 +14,7 @@ vim.o.titlestring = "nvim %t"
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
-     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#cfe2f3" })
+     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#b6d7a8" })
   end,
 })
 
@@ -60,7 +60,7 @@ vim.keymap.set("n", "<leader>ll", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
 
 
 -- Neogit Keymap
-vim.keymap.set("n", "<leader>gg", function() require("neogit").open() end, { desc = "Neogit" })
+vim.keymap.set("n", "<leader>gg", function() require("neogit").open() end, { desc = "Open Neogit UI" })
 
 
 -- Bufferline keymaps
@@ -94,7 +94,7 @@ vim.keymap.set("n", "<leader>t", function()
 end, { desc = "Open terminal" })
 
 
--- gcc, g++, rustc, lua, python, bash, arduino, and ada compiling
+-- gcc, g++, rustc, lua, python, bash, and arduino, compiling
 vim.keymap.set("n", "<leader>r", function()
    vim.cmd("w")  -- Save file first
    local ft = vim.bo.filetype
@@ -118,8 +118,6 @@ vim.keymap.set("n", "<leader>r", function()
     cmd = string.format("python3 %s; read", filename)
  elseif ft == "sh" or ft == "bash" then
     cmd = string.format("bash %s; exec bash", filename)
- elseif ft == "ada" then
-    cmd = string.format("gnatmake %s -o %s && ./%s; exec bash", filename, basename, basename)
  elseif ft == "arduino" then
     cmd = string.format("arduino-cli compile %s && arduino-cli upload %s; exec bash", vim.fn.expand("%:h"), vim.fn.expand("%:h"))
  else
@@ -223,7 +221,7 @@ vim.pack.add({
   { src = "https://github.com/dstein64/vim-startuptime" },
 
   -- Colorscheme
-  "https://github.com/f4z3r/gruvbox-material.nvim",
+  { src = "https://github.com/folke/tokyonight.nvim" },
 
   -- Colorizer
   { src = "https://github.com/NvChad/nvim-colorizer.lua" },
@@ -296,7 +294,7 @@ vim.pack.add({
 })
 
 -- Neogit Setup
-require("neogit").setup()
+require("neogit").setup({})
 
 
 -- Line Justice
@@ -330,8 +328,11 @@ require("statuscol").setup({
 })
 
 -- Colorscheme
-require("gruvbox-material").setup({})
-vim.cmd("colorscheme gruvbox-material")
+require("tokyonight").setup({
+  style = "night", -- storm, night, moon, or day
+})
+
+vim.cmd("colorscheme tokyonight")
 
 -- Colorizer
 require("colorizer").setup({
@@ -354,7 +355,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 
--- nvim-web-devicons (c++, lua, ada, asm)
+-- nvim-web-devicons (c++, lua, asm)
 require("nvim-web-devicons").set_icon({
    cpp = {
       icon ="",
@@ -365,21 +366,6 @@ require("nvim-web-devicons").set_icon({
       icon = "",
       color = "#000080",
       name = "Lua",
-   },
-   adb = {
-      icon = "",
-      color = "#38761d",
-      name = "Ada",
-   },
-   ads = {
-      icon = "",
-      color = "#8fce00",
-      name = "AdaSpec",
-   },
-   gpr = {
-      icon = "",
-      color = "#999999",
-      name = "AdaProject",
    },
    asm = {
       icon = "",
@@ -604,7 +590,7 @@ local ghost_section = {
 }
 
 vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#fabd2f" })
-vim.api.nvim_set_hl(0, "AlphaGhost", { fg = "#2a52be" })
+vim.api.nvim_set_hl(0, "AlphaGhost", { fg = "#7dcfff" })
 
 dashboard.section.buttons.val = {
    dashboard.button("n", " -> New File", ":ene <BAR> startinsert<CR>"),
@@ -646,7 +632,7 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file tr
 
 -- Treesitter (native)
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "c", "cpp", "lua", "rust", "python", "bash", "markdown", "vim", "asm", "ada", "arduino", "json", "yaml", "toml", "html", "css", "cmake" },
+  pattern = { "c", "cpp", "lua", "rust", "python", "bash", "markdown", "vim", "asm", "arduino", "json", "yaml", "toml", "html", "css", "cmake" },
   callback = function()
     vim.treesitter.start()
   end,
@@ -734,13 +720,6 @@ vim.lsp.config.bashls = {
   capabilities = capabilities,
 }
 
--- Ada
-vim.lsp.config.als = {
-  cmd = { "ada_language_server" },
-  filetypes = { "ada" },
-  root_markers = { "*.gpr", "alire.toml", ".git" },
-  capabilities = capabilities,
-}
 
 -- Arduino Uno/STM32
 vim.lsp.config.arduino_language_server = {
@@ -759,7 +738,6 @@ vim.lsp.enable("pyright")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("bashls")
-vim.lsp.enable("als")
 vim.lsp.enable("arduino_language_server")
 
 
@@ -855,20 +833,6 @@ dap.configurations.sh = {
 
 -- ARM Assembly (uses codelldb)
 dap.configurations.asm = {
-  {
-    name = "Launch",
-    type = "codelldb",
-    request = "launch",
-    program = function()
-      return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-    end,
-    cwd = "${workspaceFolder}",
-    stopOnEntry = false,
-  },
-}
-
--- Ada (uses codelldb)
-dap.configurations.ada = {
   {
     name = "Launch",
     type = "codelldb",
