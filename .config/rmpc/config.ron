@@ -4,7 +4,7 @@
 (
     address: "~/.config/mpd/socket",
     password: None,
-    theme: Some("gruvbox"),
+    theme: "tokyo-night",
     cache_dir: Some("~/.cache/rmpc"),
     on_song_change: ["~/.config/rmpc/notify"],
     volume_step: 5,
