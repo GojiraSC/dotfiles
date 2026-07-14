@@ -20,6 +20,7 @@ alias clang++='clang++ -std=c++20'
 
 alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
 alias geup='~/scripts/update-ge-proton.sh'
+alias slrup='~/scripts/update-slr.sh'
 
 if test -n "$KITTY_INSTALLATION_DIR"; then
     export KITTY_SHELL_INTEGRATION="enabled"
