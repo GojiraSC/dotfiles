@@ -3,7 +3,7 @@
      "layer": "top", // Waybar at top layer
      "exclusive": "true",
      "position": "top", // Waybar position (top|bottom|left|right)
-     "margin-top": 12,
+     "margin-top": 0,
      "margin-bottom": -8,
      "height": 49,
      "spacing": 4, // Gaps between modules (4px)
