@@ -7,7 +7,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
-pokeshell -s giratina 2>/dev/null
+if [[ -z "$NVIM_TERM" ]]; then
+  pokeshell -s giratina 2>/dev/null
+fi
 eval "$(starship init zsh)"
 
 export EDITOR=nvim
@@ -21,6 +23,7 @@ alias clang++='clang++ -std=c++20'
 alias nvim="kitty --class nvim-solid -o background_opacity=1.0 -e nvim"
 alias geup='~/scripts/update-ge-proton.sh'
 alias slrup='~/scripts/update-slr.sh'
+alias clear='clear && pokeshell -s giratina 2>/dev/null'
 
 if test -n "$KITTY_INSTALLATION_DIR"; then
     export KITTY_SHELL_INTEGRATION="enabled"
