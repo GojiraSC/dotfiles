@@ -12,7 +12,7 @@ format = "[\\(](green)[](#1793d1)[\\)\\(](green)[$user]($style)"
 show_always = true
 
 [hostname]
-style = "#3d85c6"
+style = "#6fa8dc"
 format = "[㉿](#999999)[$hostname]($style)[\\)](green)"
 ssh_only = false
 
