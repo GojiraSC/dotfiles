@@ -128,7 +128,7 @@ hl.curve("gnomed",   { type = "bezier", points = { {0, 0.85}, {0.3, 1} } })
 hl.animation({ leaf = "windows",     enabled = true, speed = 5, bezier = "overshot", style = "gnomed" })
 hl.animation({ leaf = "windowsOut",  enabled = true, speed = 5, bezier = "ease",     style = "slide bottom" })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 5, bezier = "overshot", style = "slide" })
-hl.animation({ leaf = "layers",      enabled = true, speed = 5, bezier = "ease",     style = "gnomed" })
+hl.animation({ leaf = "layers",      enabled = true, speed = 3, bezier = "ease", style = "fade" })
 hl.animation({ leaf = "fade",        enabled = true, speed = 3, bezier = "ease" })
 hl.animation({ leaf = "border",      enabled = true, speed = 2, bezier = "ease" })
 hl.animation({ leaf = "workspaces",  enabled = true, speed = 5, bezier = "overshot", style = "slide" })
@@ -289,7 +289,7 @@ env = DXVK_HDR,1
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd('bash -c \'grim -g "$(slurp)" - | swappy -f - -o "$HOME/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"\''))
 
 -- Fullscreen → save straight away
-hl.bind(ALT .. " + P", hl.dsp.exec_cmd('bash -c \'grim "$HOME/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"\''))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd('bash -c \'grim "$HOME/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"\''))
 
 -- Select area → copy to clipboard (no file)
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd('bash -c \'grim -g "$(slurp)" - | wl-copy\''))
@@ -481,6 +481,6 @@ hl.window_rule({
   name = "yazi-float",
   match = { class = "^(yazi-float)$" },
   float = true,
-  size = "1400 900",
+  size = "1700 1100",
   center = true,
 })
