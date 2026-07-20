@@ -22,7 +22,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "kitty -e yazi"
+local fileManager = "kitty --class yazi-float -o background_opacity=0.6 -e yazi"
 local menu        = "~/.config/rofi/launchers/type-6/launcher.sh"
 
 
@@ -40,7 +40,7 @@ hl.on("hyprland.start", function()
    hl.exec_cmd("systemctl --user start hyprland-session.target")
    hl.exec_cmd("waybar & librewolf")
    hl.exec_cmd("awww-daemon")
-   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-o3x3zp.jpg")
+   hl.exec_cmd("sleep 2 && awww img -o DP-1 $HOME/Pictures/Wallpapers/wallhaven-n6qd36.png")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("mako")
@@ -90,8 +90,8 @@ hl.config({
         gaps_out   = 20,
         border_size = 2,
         col = {
-            active_border   = { colors = {"rgba(7c8f8fff)"}, angle = 45 },
-            inactive_border = "rgba(3c3836aa)",
+            active_border = { colors = {"rgba(7aa2f7ff)"}, angle = 45 },
+            inactive_border = "rgba(3b4261aa)",
         },
         resize_on_border = false,
         allow_tearing    = false,
@@ -228,8 +228,8 @@ hl.device({
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F1", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + F2", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
@@ -259,14 +259,14 @@ hl.bind(mainMod .. " + Minus", hl.dsp.exec_cmd("mpv --player-operation-mode=pseu
 
 
 local ALT = "ALT"
-hl.bind(ALT .. " + grave", hl.dsp.exec_cmd("kitty --class scratch-term -o background_opacity=0.2")) -- quick drop terminal
-hl.bind(ALT .. " + Insert", hl.dsp.exec_cmd("kitty --class cava-float -o background_opacity=0.6 -e cava"))           -- Audio Visualizer
-hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty btop"))           -- Terminal-based Resource Management
-hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win -o -e cmatrix -a -b -u 3 -C yellow")) -- Terminal matrix
-hl.bind(ALT .. " + E",         hl.dsp.exec_cmd("kitty vim"))            -- Backup Editor
-hl.bind(ALT .. " + Page_Up",         hl.dsp.exec_cmd("kitty --class calcurse-float -o background_opacity=0.8 -e calcurse"))       -- Calendar
-hl.bind(ALT .. " + L",         hl.dsp.exec_cmd("kitty lazygit"))
-hl.bind(ALT .. " + equal",     hl.dsp.exec_cmd("kitty --class calc-float -o background_opacity=0.9 -e calc"))           -- Calculator
+hl.bind(ALT .. " + Grave", hl.dsp.exec_cmd("kitty --class scratch-term -o background_opacity=0.4")) -- quick drop terminal
+hl.bind(ALT .. " + Insert", hl.dsp.exec_cmd("kitty --class cava-float -o background_opacity=0.45 -e cava"))           -- Audio Visualizer
+hl.bind(ALT .. " + BackSpace", hl.dsp.exec_cmd("kitty --class btop-float -o background_opacity=1.0 -e btop"))           -- Terminal-based Resource Management
+hl.bind(ALT .. " + Delete", hl.dsp.exec_cmd("kitty --class cmatrix-win -o background_opacity=0.75 -e cmatrix -a -b -u 2 -C yellow")) -- Terminal matrix
+hl.bind(ALT .. " + E", hl.dsp.exec_cmd("kitty --class vim -o background_opacity=0.65 -e vim")) -- Backup Editor
+hl.bind(ALT .. " + Page_Up", hl.dsp.exec_cmd("kitty --class calcurse-float -o background_opacity=0.8 -e calcurse"))       -- Calendar
+hl.bind(ALT .. " + L", hl.dsp.exec_cmd("kitty lazygit"))
+hl.bind(ALT .. " + Equal", hl.dsp.exec_cmd("kitty --class calc-float -o background_opacity=0.9 -e calc"))           -- Calculator
 hl.bind(ALT .. " + P", hl.dsp.exec_cmd("kitty --class ncspot-float -o background_opacity=0.9 -e ncspot"))                 -- TUI Spotify
 hl.bind(ALT .. " + R", hl.dsp.exec_cmd("kitty --class rmpc-float -e rmpc"))                   -- TUI Music Player
 hl.bind(ALT .. " + Minus", hl.dsp.exec_cmd("kitty --class wiremix-float -o background_opacity=0.9 -e wiremix"))     -- TUI Volume Management
@@ -296,7 +296,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd('bash -c \'grim -g "$(slurp)" - | wl-
 
 -- Power and Printer Controls
 hl.bind(mainMod .. " + End", hl.dsp.exec_cmd("wlogout -b 4 --margin 200 -T 550 -B 550"))
-hl.bind(mainMod .. " + Page_Up", hl.dsp.exec_cmd("system-config-printer"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("system-config-printer"))
 
 -- Window togglefloating + resize + center
 hl.bind(mainMod .. " + SHIFT + space", function()
@@ -455,5 +455,32 @@ hl.window_rule({
   match = { class = "^(scratch-term)$" },
   float = true,
   size = "1000 900",
+  center = true,
+})
+
+-- Printer float
+hl.window_rule({
+   name = "system-config-printer-float",
+   match = { class = "^(system-config-printer)$" },
+   float = true,
+   size = "1000 900",
+   center = true,
+})
+
+-- btop float
+hl.window_rule({
+   name = "btop-float",
+   match = { class = "^(btop-float)$" },
+   float = true,
+   size = "1500 900",
+   center = true,
+})
+
+-- yazi float
+hl.window_rule({
+  name = "yazi-float",
+  match = { class = "^(yazi-float)$" },
+  float = true,
+  size = "1400 900",
   center = true,
 })
