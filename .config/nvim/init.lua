@@ -10,11 +10,13 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.o.title = true
 vim.o.titlestring = "nvim %t"
+vim.opt.termguicolors = true
+
 
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
-     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#b6d7a8" })
+     vim.api.nvim_set_hl(0, "Cursor", { fg = "#1d2021", bg = "#d9ead3" })
   end,
 })
 
@@ -55,10 +57,6 @@ vim.keymap.set("n", "<leader>dx", "<cmd>DapViewClose<cr>")
 
 
 
--- Lazygit Keymap
-vim.keymap.set("n", "<leader>ll", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
-
-
 -- Neogit Keymap
 vim.keymap.set("n", "<leader>gg", function() require("neogit").open() end, { desc = "Open Neogit UI" })
 
@@ -89,9 +87,13 @@ end, { desc = "Move current file" })
 vim.keymap.set("n", "<leader>t", function()
   vim.cmd("belowright split")
   vim.cmd("resize 15")
-  vim.cmd("terminal bash")
+  vim.cmd("terminal env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "Open terminal" })
+
+-- CLosing Terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
 
 
 -- gcc, g++, rustc, lua, python, bash, and arduino, compiling
@@ -103,23 +105,23 @@ vim.keymap.set("n", "<leader>r", function()
    local cmd
 
   if ft == "c" then
-    cmd = string.format("gcc %s -o %s && ./%s; exec bash", filename, basename, basename)
+    cmd = string.format("gcc %s -o %s && ./%s; exec env NVIM_TERM=1 zsh", filename, basename, basename)
   elseif ft == "cpp" then
-    cmd = string.format("g++ %s -o %s && ./%s; exec bash", filename, basename, basename)
+    cmd = string.format("g++ %s -o %s && ./%s; exec env NVIM_TERM=1 zsh", filename, basename, basename)
   elseif ft == "rust" then
   if vim.fn.filereadable("Cargo.toml") == 1 then
-    cmd = "cargo run; exec bash"
+    cmd = "cargo run; exec zsh"
   else
-    cmd = string.format("rustc %s -o %s && ./%s; exec bash", filename, basename, basename)
+    cmd = string.format("rustc %s -o %s && ./%s; exec env NVIM_TERM=1 zsh", filename, basename, basename)
  end
   elseif ft == "lua" then
-    cmd = string.format("lua %s; exec bash", filename)
+    cmd = string.format("lua %s; exec env NVIM_TERM=1 zsh", filename)
   elseif ft == "python" then
     cmd = string.format("python3 %s; read", filename)
  elseif ft == "sh" or ft == "bash" then
-    cmd = string.format("bash %s; exec bash", filename)
+    cmd = string.format("bash %s; exec env NVIM_TERM=1 zsh", filename)
  elseif ft == "arduino" then
-    cmd = string.format("arduino-cli compile %s && arduino-cli upload %s; exec bash", vim.fn.expand("%:h"), vim.fn.expand("%:h"))
+    cmd = string.format("arduino-cli compile %s && arduino-cli upload %s; exec env NVIM_TERM=1 zsh", vim.fn.expand("%:h"), vim.fn.expand("%:h"))
  else
     vim.notify("Not a supported filetype for running!", vim.log.levels.WARN)
     return
@@ -140,13 +142,24 @@ end, { desc = "Compile & Run (C/C++/Rust/Lua/Python/Bash/Ada/Arduino) in Termina
   -- Assemble and link
   local assemble = string.format("arm-linux-gnueabihf-as -o %s.o %s && arm-linux-gnueabihf-ld -o %s %s.o", out, filename, out, out)
   -- Run in QEMU
-  local run = string.format("qemu-arm ./%s; exec bash", out)
+  local run = string.format("qemu-arm ./%s; exec env NVIM_TERM=1 zsh", out)
   -- Open terminal below, assemble, run
   vim.cmd("belowright split")
   vim.cmd("resize 15")
   vim.cmd("terminal bash -c '" .. assemble .. " && " .. run .. "'")
   vim.cmd("startinsert")
 end, { desc = "Assemble & Run ARM ASM in Terminal" })
+
+vim.keymap.set("n", "<leader>ab", function()
+  vim.cmd("w")
+  local filename = vim.fn.expand("%")
+  local basename = vim.fn.expand("%:t:r")
+  local compile = string.format("arm-linux-gnueabihf-gcc -o %s %s -static && qemu-arm ./%s; exec env NVIM_TERM=1 zsh", basename, filename, basename)
+  vim.cmd("belowright split")
+  vim.cmd("resize 15")
+  vim.cmd("terminal bash -c '" .. compile .. "'")
+  vim.cmd("startinsert")
+end, { desc = "Compile & Run ARM C in Terminal" })
 
 
 -- Arduino Compile
@@ -166,7 +179,7 @@ end, { desc = "Arduino upload" })
 -- Arduino Compile + Upload
 vim.keymap.set("n", "<leader>af", function()
   vim.cmd("w")
-  vim.cmd("belowright split | resize 15 | terminal arduino-cli compile . && arduino-cli upload .; exec bash")
+  vim.cmd("belowright split | resize 15 | terminal arduino-cli compile . && arduino-cli upload .; exec env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "Arduino compile & upload" })
 
@@ -180,7 +193,7 @@ end, { desc = "Arduino serial monitor" })
 vim.keymap.set("n", "<leader>al", function()
   local lib = vim.fn.input("Library name: ")
   if lib ~= "" then
-    vim.cmd("belowright split | resize 15 | terminal arduino-cli lib install " .. lib .. "; exec bash")
+    vim.cmd("belowright split | resize 15 | terminal arduino-cli lib install " .. lib .. "; exec env NVIM_TERM=1 zsh")
     vim.cmd("startinsert")
   end
 end, { desc = "Arduino install library" })
@@ -189,26 +202,26 @@ end, { desc = "Arduino install library" })
 -- STM32 Build
 vim.keymap.set("n", "<leader>sb", function()
   vim.cmd("w")
-  vim.cmd("belowright split | resize 15 | terminal make; exec bash")
+  vim.cmd("belowright split | resize 15 | terminal make; exec env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "STM32 build" })
 
 -- STM32 Flash
 vim.keymap.set("n", "<leader>sf", function()
   vim.cmd("w")
-  vim.cmd("belowright split | resize 15 | terminal make flash; exec bash")
+  vim.cmd("belowright split | resize 15 | terminal make flash; exec env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "STM32 flash" })
 
 -- STM32 Clean
 vim.keymap.set("n", "<leader>sc", function()
-  vim.cmd("belowright split | resize 15 | terminal make clean; exec bash")
+  vim.cmd("belowright split | resize 15 | terminal make clean; exec env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "STM32 clean" })
 
 -- STM32 Debug (OpenOCD)
 vim.keymap.set("n", "<leader>sd", function()
-  vim.cmd("belowright split | resize 15 | terminal openocd -f interface/stlink.cfg -f target/stm32f4x.cfg; exec bash")
+  vim.cmd("belowright split | resize 15 | terminal openocd -f interface/stlink.cfg -f target/stm32f4x.cfg; exec env NVIM_TERM=1 zsh")
   vim.cmd("startinsert")
 end, { desc = "STM32 OpenOCD debug server" })
 
@@ -216,9 +229,6 @@ end, { desc = "STM32 OpenOCD debug server" })
 
 -- vim.pack Stuff
 vim.pack.add({
-
-  -- Startup
-  { src = "https://github.com/dstein64/vim-startuptime" },
 
   -- Colorscheme
   { src = "https://github.com/folke/tokyonight.nvim" },
@@ -237,6 +247,10 @@ vim.pack.add({
 
   -- Neogit
   { src = "https://github.com/NeogitOrg/neogit" },
+
+  -- Rust-Analyzer
+  { src = "https://github.com/mrcjkb/rustaceanvim",
+  version = vim.version.range("^9") },
 
   -- Session manager
   "https://github.com/nvim-lua/plenary.nvim",
@@ -271,7 +285,6 @@ vim.pack.add({
   "https://github.com/neovim/nvim-lspconfig",
 
   -- Git Stuff
-  { src = "https://github.com/kdheepak/lazygit.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
 
   -- Bufferline
@@ -286,7 +299,6 @@ vim.pack.add({
   -- Completion
   "https://github.com/hrsh7th/nvim-cmp",
   "https://github.com/hrsh7th/cmp-nvim-lsp",
-  "https://github.com/hrsh7th/cmp-buffer",
   "https://github.com/hrsh7th/cmp-path",
   "https://github.com/L3MON4D3/LuaSnip",
   "https://github.com/saadparwaiz1/cmp_luasnip",
@@ -295,6 +307,14 @@ vim.pack.add({
 
 -- Neogit Setup
 require("neogit").setup({})
+
+
+-- Colorscheme
+require("tokyonight").setup({
+  style = "night", -- storm, night, moon, or day
+})
+
+vim.cmd("colorscheme tokyonight")
 
 
 -- Line Justice
@@ -327,12 +347,7 @@ require("statuscol").setup({
   },
 })
 
--- Colorscheme
-require("tokyonight").setup({
-  style = "night", -- storm, night, moon, or day
-})
 
-vim.cmd("colorscheme tokyonight")
 
 -- Colorizer
 require("colorizer").setup({
@@ -464,7 +479,9 @@ _G.find_project_files = function()
       "~/dotfiles",
       "~/Documents",
       "~/.config",
-      "~/Practice",
+      "~/practice",
+      "~/rust-stuff",
+      "~/rustlings",
     },
     hidden = true,
   })
@@ -505,6 +522,10 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 
+
+
+
+
 -- Lualine
 require("lualine").setup({
   options = {
@@ -518,14 +539,14 @@ require("lualine").setup({
         "mode",
         color = function()
           local mode_colors = {
-            n  = { fg = "#1d2021", bg = "#fabd2f", gui = "bold" },  -- yellow
-            i  = { fg = "#1d2021", bg = "#83a598", gui = "bold" },  -- blue
-            v  = { fg = "#1d2021", bg = "#b8bb26", gui = "bold" },  -- green
-            V  = { fg = "#1d2021", bg = "#b8bb26", gui = "bold" },  -- green
-            [""] = { fg = "#1d2021", bg = "#b8bb26", gui = "bold" }, -- visual block (ctrl-v)
-            c  = { fg = "#1d2021", bg = "#fe8019", gui = "bold" },  -- orange
-            R  = { fg = "#1d2021", bg = "#fb4934", gui = "bold" },  -- red
-            t  = { fg = "#1d2021", bg = "#d3869b", gui = "bold" },  -- purple
+            n  = { fg = "#1d2021", bg = "#82aaff", gui = "bold" },
+            i  = { fg = "#1d2021", bg = "#c3e88d", gui = "bold" },
+            v  = { fg = "#1d2021", bg = "#fca7ea", gui = "bold" },
+            V  = { fg = "#1d2021", bg = "#fca7ea", gui = "bold" },
+            [""] = { fg = "#1d2021", bg = "#fca7ea", gui = "bold" }, -- visual block (ctrl-v)
+            c  = { fg = "#1d2021", bg = "#ff966c", gui = "bold" },
+            R  = { fg = "#1d2021", bg = "#ff757f", gui = "bold" },
+            t  = { fg = "#1d2021", bg = "#4fd6be", gui = "bold" },
           }
           return mode_colors[vim.fn.mode()] or mode_colors.n
         end,
@@ -540,11 +561,11 @@ require("lualine").setup({
     lualine_c = {
   {
     "filename",
-    color = { fg = "#d5c4a1" },
+    color = { fg = "#c0caf5" },
   },
 },
     lualine_x = {
-  { "encoding", color = { fg = "#a89984" } },
+  { "encoding", color = { fg = "#737aa2" } },
   {
   "fileformat",
   symbols = {
@@ -554,13 +575,13 @@ require("lualine").setup({
   },
   color = { fg = "#ffd966" },
 },
-  { "filetype", color = { fg = "#fabd2f" } },
+  { "filetype", color = { fg = "#82aaff" } },
 },
     lualine_y = {
-  { "progress", color = { fg = "#8fce00" } },
+  { "progress", color = { fg = "#bb9af7" } },
 },
     lualine_z = {
-  { "location", color = { fg = "#134f5c" } },
+  { "location", color = { fg = "#073763" } },
 },
   },
 })
@@ -614,11 +635,11 @@ dashboard.section.buttons.opts.position = "center"
 dashboard.opts.layout = {
   { type = "padding", val = 2 },
   neovim_section,
-  { type = "padding", val = 2 },
+  { type = "padding", val = 4 },
   ghost_section,
-  { type = "padding", val = 3 },
+  { type = "padding", val = 7 },
   dashboard.section.buttons,
-  { type = "padding", val = 3 },
+  { type = "padding", val = 7 },
   dashboard.section.footer,
 }
 
@@ -686,14 +707,6 @@ vim.lsp.config.pyright = {
   cmd = { "pyright-langserver", "--stdio" },
   filetypes = { "python" },
   root_markers = { "pyrightconfig.json", "setup.py", "pyproject.toml", ".git" },
-  capabilities = capabilities,
-}
-
--- Rust
-vim.lsp.config.rust_analyzer = {
-  cmd = { "rust-analyzer" },
-  filetypes = { "rust" },
-  root_markers = { "Cargo.toml", ".git" },
   capabilities = capabilities,
 }
 
@@ -893,7 +906,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 -- Diagnostics
 vim.diagnostic.config({
-  virtual_text = true,
+  virtual_text = false,
+  virtual_lines = { current_line = true },
   underline = true,
   update_in_insert = false,
   severity_sort = true,
